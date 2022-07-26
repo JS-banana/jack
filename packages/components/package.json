@@ -1,0 +1,12 @@
+{
+    "name": "@ah-ailpha/components",
+    "version": "0.0.1",
+    "description": "all components are settled here",
+    "main": "index.js",
+    "module": "index.js",
+    "types": "index.d.ts",
+    "sideEffects": false,
+    "peerDependencies": {
+        "vue": "^2.6.10"
+    }
+}

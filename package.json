@@ -1,0 +1,24 @@
+{
+    "name": "@ailpha/components",
+    "version": "0.0.1",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "lint": "lerna run lint --parallel --stream",
+        "lint:fix": "lerna run lint:fix --parallel",
+        "clean": "lerna clean",
+        "changelog": "conventional-changelog -u -p vuetify",
+        "docs:dev": "pnpm run -C docs dev",
+        "docs:build": "pnpm run -C docs build",
+        "stub": "pnpm run -r --parallel stub",
+        "build:iview": "pnpm run -C ./packages/view-design dist"
+    },
+    "devDependencies": {
+        "vuepress": "^1.9.7"
+    },
+    "peerDependencies": {
+        "vue": "^2.6.10"
+    }
+}

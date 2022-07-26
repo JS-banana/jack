@@ -1,0 +1,12 @@
+{
+  "name": "@ah-ailpha/docs",
+  "private": true,
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "devDependencies": {
+    "vuepress": "^1.9.7",
+    "vuepress-plugin-demo-container": "^0.2.0"
+  }
+}
