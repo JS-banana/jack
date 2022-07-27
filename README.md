@@ -69,3 +69,7 @@
    - [vite-plugin-md](https://github.com/antfu/vite-plugin-md)
 2. vuepress生态
    - [vuepress-plugin-demo-container](https://github.com/calebman/vuepress-plugin-demo-container)
+
+## 资料
+
+- [使用Vite和TypeScript带你从零打造一个属于自己的Vue3组件库](https://juejin.cn/post/7117886038126624805)
