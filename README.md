@@ -34,7 +34,7 @@
 
 总体框架思路应该不受技术栈影响，核心点类似。后期根据不同技术栈再做进一步的针对性开发改进。
 
-### 值得学习的开源项目
+### 开源组件化项目
 
 几个思考的思路点：
 
@@ -61,3 +61,11 @@
 <!-- 心里倾向：
 
 对于element、iview组件库的官方文档比较满意 -->
+
+### 不错的工具类库
+
+1. vite生态markdown相关
+   - [vite-plugin-markdown](https://github.com/hmsk/vite-plugin-markdown)
+   - [vite-plugin-md](https://github.com/antfu/vite-plugin-md)
+2. vuepress生态
+   - [vuepress-plugin-demo-container](https://github.com/calebman/vuepress-plugin-demo-container)
