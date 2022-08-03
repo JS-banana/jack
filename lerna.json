@@ -1,13 +1,15 @@
 {
-  "command": {
-    "publish": {
-      "allowBranch": ["master", "dev", "next"],
-      "message": "chore(release): publish %s"
+    "packages": ["packages/*"],
+    "command": {
+        "publish": {
+            "allowBranch": ["master", "dev", "next"],
+            "message": "chore(release): publish %s"
+        },
+        "version": {
+            "push": true
+        }
     },
-    "version": {
-      "push": true
-    }
-  },
-  "version": "2.6.7",
-  "useWorkspaces": true
+    "version": "independent",
+    "useWorkspaces": true,
+    "npmClient": "yarn"
 }

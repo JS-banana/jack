@@ -53,10 +53,18 @@
 
 1. antd-design-vue
 2. element
+   - 文档网站整体风格值得参考，主要开发工作在如何处理demo渲染和文档渲染部分
+   - element的vue2.x版本：是自行开发搭建的vue项目，通过自行编写的loader和插件，主要技术栈围绕在Webpack
+   - element的vue3.x版本：是使用vitepress配合自己编写的插件实现的，全新的技术栈和vue2.x兼容暂时不考虑，主要考虑思路
 3. iview
-4. vuetify
-5. [tdesign-vue（vue2.x版本）](https://github.com/Tencent/tdesign-vue)
-6. [antd/pro-components（react）](https://github.com/ant-design/pro-components)
+   - 网站整体和element类似，不过对于demo和文档的处理部分有待优化提升
+   - 构建方面，技术栈主要集中在Webpack4.x
+4. vuesax-next
+   - 使用Webpack构建
+   - 网站使用vuepress搭建
+5. vuetify：使用webpack发布包，此方式值得学习研究和尝试
+6. [tdesign-vue（vue2.x版本）](https://github.com/Tencent/tdesign-vue)
+7. [antd/pro-components（react）](https://github.com/ant-design/pro-components)
 
 <!-- 心里倾向：
 
