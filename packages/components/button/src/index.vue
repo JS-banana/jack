@@ -7,7 +7,7 @@
 const prefixCls = 'ah-btn'
 
 export default {
-    name: 'Button',
+    name: 'AButton',
     data() {},
     props: {
         disbaled: {
