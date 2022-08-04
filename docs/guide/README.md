@@ -50,11 +50,10 @@ yarn add @ah-ailpha/pro-sqltiptree
 1. 入口统一引入注册，全局使用：
 
     ```js
-    import { Input } from '@an-ailpha/components'
+    import { Button } from '@an-ailpha/components'
     import ProSqlTipTree from '@ah-ailpha/pro-sqltiptree'
 
-
-    Vue.use(Input)
+    Vue.use(Button)
     Vue.use(ProSqlTipTree)
     ```
 
