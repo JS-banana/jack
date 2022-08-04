@@ -1,4 +1,5 @@
-import ViewUI from '../examples/index'
+import ViewUI from '../../examples/index'
+import components from '../../examples/components'
 
 export default ({
   Vue,
@@ -7,4 +8,5 @@ export default ({
   // siteData,
 }) => {
   Vue.use(ViewUI)
+  Vue.use(components)
 }

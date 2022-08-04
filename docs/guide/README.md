@@ -18,7 +18,7 @@ title: 使用指南
 
 :::
 
-为了方便维护以及支持用户按需使用，各组件通过**Monorepo**多包管理的方式进行发布，普通组件统一发布在`@an-ailpha/components`名下，按需引入，高级组件独立发布为一个npm包`@ah-ailpha/com-sqltiptree`。
+为了方便维护以及支持用户按需使用，各组件通过**Monorepo**多包管理的方式进行发布，普通组件统一发布在`@an-ailpha/components`名下，按需引入，高级组件独立发布为一个npm包`@ah-ailpha/pro-sqltiptree`。
 
 </br>
 
@@ -26,9 +26,9 @@ title: 使用指南
 
 ```js
 // 普通组件
-import { Input } from '@an-ailpha/components'
+import { Button } from '@an-ailpha/components'
 // 高级组件
-import ComSqlTipTree from '@ah-ailpha/com-sqltiptree'
+import ProSqlTipTree from '@ah-ailpha/por-sqltiptree'
 ```
 
 ## 安装
@@ -38,15 +38,11 @@ import ComSqlTipTree from '@ah-ailpha/com-sqltiptree'
 ```sh
 # npm
 npm install @an-ailpha/components
-npm install @ah-ailpha/com-sqltiptree
+npm install @ah-ailpha/pro-sqltiptree
 
 # yarn
 yarn add @an-ailpha/components
-yarn add @ah-ailpha/com-sqltiptree
-
-# pnpm
-pnpm add @an-ailpha/components
-pnpm add @ah-ailpha/com-sqltiptree
+yarn add @ah-ailpha/pro-sqltiptree
 ```
 
 ## 使用
@@ -55,11 +51,11 @@ pnpm add @ah-ailpha/com-sqltiptree
 
     ```js
     import { Input } from '@an-ailpha/components'
-    import ComSqlTipTree from '@ah-ailpha/com-sqltiptree'
+    import ProSqlTipTree from '@ah-ailpha/pro-sqltiptree'
 
 
     Vue.use(Input)
-    Vue.use(ComSqlTipTree)
+    Vue.use(ProSqlTipTree)
     ```
 
 2. 在任意组件中单独引入使用：
@@ -67,18 +63,18 @@ pnpm add @ah-ailpha/com-sqltiptree
     ```vue
     <template>
         <div>
-            <Input />
-            <ComSqlTipTree></ComSqlTipTree>
+            <ah-button>按钮</ah-button>
+            <ProSqlTipTree></ProSqlTipTree>
         </div>
     </template>
 
     <script>
-    import { Input } from '@an-ailpha/components'
+    import { Button } from '@an-ailpha/components'
     import ComSqlTipTree from '@ah-ailpha/com-sqltiptree'
     export default {
         components: {
-            Input,
-            ComSqlTipTree
+            AhButton: Button,
+            ProSqlTipTree
         },
     }
     </script>

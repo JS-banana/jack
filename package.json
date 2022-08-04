@@ -16,6 +16,7 @@
         "build:iview": "pnpm run -C ./packages/view-design dist"
     },
     "devDependencies": {
+        "lerna": "^5.3.0",
         "vuepress": "^1.9.7"
     },
     "peerDependencies": {

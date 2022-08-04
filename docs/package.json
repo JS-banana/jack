@@ -8,5 +8,8 @@
   "devDependencies": {
     "vuepress": "^1.9.7",
     "vuepress-plugin-demo-container": "^0.2.0"
+  },
+  "dependencies": {
+    "view-design": "^4.7.0"
   }
 }

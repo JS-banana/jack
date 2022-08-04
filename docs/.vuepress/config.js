@@ -24,16 +24,18 @@ module.exports = {
         link: '/guide/',
       },
       {
-        text: '组件',
+        text: '基础组件',
         link: '/components/button',
+      },
+      {
+        text: '高级组件',
+        link: '/pro-components/comSqlTipTree',
       },
     ],
     sidebar: {
       '/guide/': [['', '使用指南']],
-      '/components/': [
-        ['button', 'Button'],
-        ['comSqlTipTree', 'ComSqlTipTree'],
-      ],
+      '/components/': [['button', 'Button']],
+      '/pro-components/': [['comSqlTipTree', 'ComSqlTipTree']],
     },
   },
 }
