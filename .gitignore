@@ -23,9 +23,9 @@ cypress/videos
 .now
 
 # Yarn 3
-/.yarn/*
+/**/.yarn/*
 # !/.yarn/patches
 # !/.yarn/plugins
-!/.yarn/releases
+!/**/.yarn/releases
 # !/.yarn/sdks
 # !/.yarn/cache

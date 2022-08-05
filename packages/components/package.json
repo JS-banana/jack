@@ -7,6 +7,12 @@
   "types": "index.d.ts",
   "sideEffects": false,
   "peerDependencies": {
+    "view-design": "^4.3.2",
     "vue": "^2.6.10"
-  }
+  },
+  "files": [
+    "dist",
+    "src",
+    "types"
+  ]
 }
