@@ -18,7 +18,8 @@
     "url": "git+https://github.com/JS-banana/jack.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "hi": "echo \"hi hahaha~\""
   },
   "bugs": {
     "url": "https://github.com/JS-banana/jack/issues"
