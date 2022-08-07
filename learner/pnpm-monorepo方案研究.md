@@ -63,6 +63,19 @@ peerDependencies：
 
 `--shamefully-hoist`：创建一个扁平node_modules 目录结构, 类似于npm 或 yarn. 一般配置在`.npmrc`中。
 
+- 安装依赖
+  - `-w`：表示把包安装在 root 下，该包会放置在 `<root>/node_modules` 下
+  - `-r`：安装在所有 packages 中（一般配合`--filter`指定项目目录）
+
+    ```sh
+    # 用 pnpm 安装全局共用的包
+    pnpm install vue -w
+    # 只安装在 packages/web 目录中，其package.json中的name为 @jack/web
+    pnpm i dayjs -r --filter @jack/web
+    ```
+
+    如vue这样多个子项目都需要使用的包，可以安装到全局。
+
 **pnpm run**
 
 - `-r`：针对每个package.json script对象中执行对应的命令，没有匹配到则跳过。
@@ -86,20 +99,31 @@ peerDependencies：
 │   └── web             // @jack/web
 ```
 
-1. pnpm install：安装依赖
-   - `-w`：表示把包安装在 root 下，该包会放置在 `<root>/node_modules` 下
-   - `-r`：安装在所有 packages 中（一般配合`--filter`指定项目目录）
+当我们在web项目中安装 ui作为依赖时：
 
-    ```sh
-    # 用 pnpm 安装全局共用的包
-    pnpm install react react-dom -w
-    # 只安装在 packages/web 目录中，其package.json中的name为 @jack/web
-    pnpm i dayjs -r --filter @jack/web
-    ```
+pnpm workspace 会自动管理软连接到指定项目，你只需关注开发即可
 
-    如vue这样多个子项目都需要使用的包，可以安装到全局。
+package.json如下：
 
-## 关键命令参数
+```json
+{
+  "dependencies": {
+    "@jack/ui": "workspace:^0.0.1",
+  },
+}
+```
+
+发布的时候包名称会自动调整为
+
+```json
+{
+  "dependencies": {
+    "@jack/ui": "^0.0.1",
+  },
+}
+```
+
+对应版本符合规范`workspace:*`, `workspace:~`, or `workspace:^`
 
 ## 资料
 

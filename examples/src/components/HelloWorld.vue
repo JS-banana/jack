@@ -7,7 +7,7 @@
     <hr />
     <ah-button>ah-button</ah-button>
     <hr />
-    <ah-proSqlTipTree></ah-proSqlTipTree>
+    <!-- <ah-proSqlTipTree></ah-proSqlTipTree> -->
   </div>
 </template>
 
@@ -15,9 +15,9 @@
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String,
-  },
-}
+    msg: String
+  }
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

@@ -4,20 +4,22 @@ const merge = require('webpack-merge');
 const webpackBaseConfig = require('./webpack.base.config.js');
 const CompressionPlugin = require('compression-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const dayjs = require('dayjs');
 const pkg = require('../package.json');
 
 process.env.NODE_ENV = 'production';
 
 module.exports = merge(webpackBaseConfig, {
+  mode: 'production',
   devtool: 'source-map',
   entry: {
-    main: './index.js'
+    main: './src/index.js'
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
     publicPath: '/dist/',
-    filename: 'components.min.js',
+    filename: 'components.js',
     library: 'components',
     libraryTarget: 'umd',
     umdNamedDefine: true
@@ -53,6 +55,9 @@ module.exports = merge(webpackBaseConfig, {
   */`,
       raw: true,
       entryOnly: true
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].css'
     })
   ]
 });

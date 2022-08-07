@@ -11,6 +11,7 @@
   },
   "main": "index.js",
   "dependencies": {
+    "@ah-ailpha/components": "workspace:^0.0.1",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
@@ -20,8 +21,12 @@
     "@vue/cli-plugin-eslint": "~4.5.19",
     "@vue/cli-service": "~4.5.19",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
+    "eslint": "4.18.2",
+    "eslint-config-elemefe": "0.1.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-html": "^4.0.1",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-vue": "^4.7.1",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
