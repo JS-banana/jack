@@ -6,7 +6,7 @@
   </div>
 </template>
 <script>
-const prefixCls = 'ah-proSqlTipTree'
+const prefixCls = 'ah-proSqlTipTree';
 
 export default {
   name: 'AhProSqlTipTree',
@@ -14,20 +14,20 @@ export default {
     // 是否模型或指标
     propsIsFlink: {
       type: Boolean,
-      default: false,
-    },
+      default: false
+    }
   },
   computed: {
     classes() {
       return [
         `${prefixCls}`,
         {
-          [`${prefixCls}-link`]: this.propsIsFlink,
-        },
-      ]
-    },
-  },
-}
+          [`${prefixCls}-link`]: this.propsIsFlink
+        }
+      ];
+    }
+  }
+};
 </script>
 <style scoped>
 .ah-proSqlTipTree h2 {

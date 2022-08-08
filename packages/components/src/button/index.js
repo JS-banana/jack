@@ -1,8 +1,8 @@
-import Button from './src/index.vue'
+import Button from './src/index.vue';
 
 /* istanbul ignore next */
-Button.install = function (Vue) {
-  Vue.component(Button.name, Button)
-}
+Button.install = function(Vue) {
+  Vue.component(Button.name, Button);
+};
 
-export default Button
+export default Button;

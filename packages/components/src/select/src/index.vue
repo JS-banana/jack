@@ -2,7 +2,7 @@
   <input :class="classes" />
 </template>
 <script>
-const prefixCls = 'ah-select'
+const prefixCls = 'ah-select';
 
 export default {
   name: 'AhSelect',
@@ -19,10 +19,10 @@ export default {
         {
           [`${prefixCls}-disbaled`]: this.disbaled
         }
-      ]
+      ];
     }
   }
-}
+};
 </script>
 <style scoped>
 .ah-select {

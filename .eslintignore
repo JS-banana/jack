@@ -1,9 +1,14 @@
 *.sh
-node_modules
-lib
-coverage
 *.md
 *.scss
 *.woff
 *.ttf
+
+# file
 /**/dist
+/**/lib
+/**/__tests__
+/**/node_modules
+/**/assets
+/**/public
+packages/view-design

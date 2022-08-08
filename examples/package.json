@@ -5,6 +5,7 @@
   "description": "",
   "author": "",
   "scripts": {
+    "dev": "npm run serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -30,7 +31,6 @@
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
-    "root": true,
     "env": {
       "node": true
     },

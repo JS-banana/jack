@@ -9,7 +9,8 @@
     "dev": "pnpm run -C examples serve",
     "docs:dev": "pnpm run -C docs dev",
     "docs:build": "pnpm run -C docs build",
-    "clean": "pnpm run clean:dist && pnpm run -r --parallel clean"
+    "clean": "pnpm run clean:dist && pnpm run -r --parallel clean",
+    "lint": "eslint docs/**/* examples/**/* packages/**/* build/**/* --fix --quiet"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
@@ -57,6 +58,7 @@
     "vue-hot-reload-api": "^2.3.1",
     "vue-html-loader": "^1.2.4",
     "vue-loader": "^14.2.1",
+    "vue-router": "^3.0.1",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.12",
     "webpack": "^4.39.1",
