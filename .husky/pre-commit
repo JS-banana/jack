@@ -1,5 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npx --no-install lint-staged
+# npx --no-install lint-staged
+
+pnpm run lint:fix
 npx pretty-quick --staged

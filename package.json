@@ -10,8 +10,8 @@
     "docs:dev": "pnpm run -C docs dev",
     "docs:build": "pnpm run -C docs build",
     "clean": "pnpm run -r --parallel clean",
-    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json --max-warnings 0 && pretty-quick --check",
-    "lint:fix": "eslint --fix . --ext .vue,.js,.ts,.jsx,.tsx,.json && pretty-quick",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json --max-warnings 0",
+    "lint:fix": "eslint --fix . --ext .vue,.js,.ts,.jsx,.tsx,.json",
     "changelog": "echo 'generate master changelog' && conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "prepare": "husky install",
     "pretty-quick": "pretty-quick --staged"

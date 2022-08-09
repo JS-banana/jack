@@ -11,24 +11,24 @@ export default {
   props: {
     disbaled: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   computed: {
     classes() {
       return [
         `${prefixCls}`,
         {
-          [`${prefixCls}-disbaled`]: this.disbaled
-        }
+          [`${prefixCls}-disbaled`]: this.disbaled,
+        },
       ];
-    }
+    },
   },
   methods: {
     getComputedStyle() {
-      //
-    }
-  }
+      // test
+    },
+  },
 };
 </script>
 <style scoped>
