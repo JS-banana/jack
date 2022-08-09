@@ -23,6 +23,11 @@ export default {
         }
       ];
     }
+  },
+  methods: {
+    getComputedStyle() {
+      //
+    }
   }
 };
 </script>
