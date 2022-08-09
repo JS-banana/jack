@@ -6,7 +6,6 @@ importers:
     specifiers:
       '@commitlint/cli': ^17.0.3
       '@commitlint/config-conventional': ^17.0.3
-      '@ls-lint/ls-lint': ^1.11.2
       autoprefixer: ^9.6.4
       autoprefixer-loader: ^3.2.0
       babel-cli: ^6.26.0
@@ -66,7 +65,6 @@ importers:
     devDependencies:
       '@commitlint/cli': 17.0.3
       '@commitlint/config-conventional': 17.0.3
-      '@ls-lint/ls-lint': 1.11.2
       autoprefixer: 9.8.8
       autoprefixer-loader: 3.2.0
       babel-cli: 6.26.0
@@ -2745,13 +2743,6 @@ packages:
     dependencies:
       npmlog: 6.0.2
       write-file-atomic: 4.0.1
-    dev: true
-
-  /@ls-lint/ls-lint/1.11.2:
-    resolution: {integrity: sha512-kX+CCjgNz+NHCaOcFyJLSBLRgAoyOxN18QFLpgucz5ILvbr60BGjwKaoPYTv/rBV/77L+Oz82lpP24mzJ2wGsQ==}
-    cpu: [x64, arm64]
-    os: [darwin, linux, win32]
-    hasBin: true
     dev: true
 
   /@mrmlnc/readdir-enhanced/2.2.1:
