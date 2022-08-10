@@ -1,6 +1,6 @@
 {
   "name": "demo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "> TODO: description",
   "author": "JS-banana <sss213018@163.com>",
   "homepage": "https://github.com/JS-banana/jack#readme",
@@ -25,6 +25,6 @@
     "url": "https://github.com/JS-banana/jack/issues"
   },
   "dependencies": {
-    "@ah-ailpha/pro-sqltiptree": "^0.0.1"
+    "@ah-ailpha/pro-sqltiptree": "^1.0.0"
   }
 }

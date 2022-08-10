@@ -1,6 +1,6 @@
 {
   "name": "@ah-ailpha/components",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "all components are settled here",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -63,5 +63,9 @@
     "dist",
     "src",
     "types"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }

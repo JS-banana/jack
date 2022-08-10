@@ -12,7 +12,7 @@
   },
   "main": "index.js",
   "dependencies": {
-    "@ah-ailpha/components": "workspace:^0.0.1",
+    "@ah-ailpha/components": "workspace:*",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },

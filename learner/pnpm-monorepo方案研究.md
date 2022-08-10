@@ -125,6 +125,32 @@ package.json如下：
 
 对应版本符合规范`workspace:*`, `workspace:~`, or `workspace:^`
 
+## npm 发包
+
+> 在 npm publish之前你应该已经 npm login 登录过了~
+
+使用`changeset publish`时，会报`npm ERR! 402 Payment Required`错误
+
+原因：无法发布到私有包，当包名以`@your-name`开头时，`npm publish`会默认发布为私有包，但是 npm 的私有包需要付费
+
+402错误
+
+```js
+npm ERR! code E402
+npm ERR! 402 Payment Required - PUT https://registry.npmjs.org/.... - You must sign up for private packages
+```
+
+package.jsom配置
+
+```json
+{
+    "publishConfig": {
+      "access": "public",
+      // "registry": "https://registry.npmjs.org/"
+    }
+}
+```
+
 ## 资料
 
 - [使用 pnpm 构建 Monorepo 项目](https://zhuanlan.zhihu.com/p/373935751)
