@@ -15,8 +15,13 @@
   },
   "files": [
     "dist",
+    "lib",
+    "es",
     "src",
-    "types"
+    "types",
+    "CHANGELOG.md",
+    "README.md",
+    "package.json"
   ],
   "publishConfig": {
     "access": "public",
