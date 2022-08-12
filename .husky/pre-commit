@@ -1,15 +1,15 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-echo "Running pre-commit hook..."
+echo "🎃🎃🎃start lint-staged ==============================="
 
 npx --no-install lint-staged
 
-echo "🎉🎉🎉Lint-staged complete"
+echo "🎉🎉🎉end lint-staged ==============================="
 
-echo "Running pre-commit hook complete"
+echo "🎃🎃🎃start pretty-quick ==============================="
 
 # pnpm run lint:fix
 npx pretty-quick --staged
 
-echo "🎉🎉🎉Pretty-quick complete"
+echo "🎉🎉🎉end pretty-quick ==============================="

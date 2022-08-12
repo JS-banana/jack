@@ -6,4 +6,5 @@ const getPackages = async () => {
   console.log('entries', entries)
 }
 
+// test
 getPackages()
