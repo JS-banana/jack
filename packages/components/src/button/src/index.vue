@@ -4,7 +4,7 @@
   </button>
 </template>
 <script>
-const prefixCls = 'ah-btn';
+const prefixCls = 'ah-btn'
 
 export default {
   name: 'AhButton',
@@ -21,7 +21,7 @@ export default {
         {
           [`${prefixCls}-disbaled`]: this.disbaled,
         },
-      ];
+      ]
     },
   },
   methods: {
@@ -29,7 +29,7 @@ export default {
       // test
     },
   },
-};
+}
 </script>
 <style scoped>
 .ah-btn {

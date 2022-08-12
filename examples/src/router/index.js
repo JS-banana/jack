@@ -1,34 +1,34 @@
-import VueRouter from 'vue-router';
-import Vue from 'vue';
+import VueRouter from 'vue-router'
+import Vue from 'vue'
 // import Ahcomponents from 'packages/components/src';
-import Home from '../pages/home.vue';
-import routerView from '../pages/router-view.vue';
+import Home from '../pages/home.vue'
+import routerView from '../pages/router-view.vue'
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
     name: 'ah-home',
-    component: Home
+    component: Home,
   },
   {
     path: 'components',
     name: 'ah-components',
     component: routerView,
-    children: []
-  }
-];
+    children: [],
+  },
+]
 
 // Object.keys(Ahcomponents).forEach(com=>{
 
 // })
 
-const files = require.context('packages', false, /\.js$/);
+const files = require.context('packages', false, /\.js$/)
 
-console.log('files', files);
+console.log('files', files)
 
 export const router = new VueRouter({
   mode: 'hash',
-  routes
-});
+  routes,
+})

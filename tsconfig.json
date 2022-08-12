@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "esnext",
     "module": "esnext",
     "strict": true,
@@ -10,12 +11,12 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
-    "baseUrl": ".",
+    // "allowJs": true,
     // "paths": {
     //     "@/*": ["src/*"]
     // },
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
   "include": ["packages", "docs", "examples"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }

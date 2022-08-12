@@ -1,8 +1,8 @@
-import ProSqlTipTree from './src/index.vue';
+import ProSqlTipTree from './src/index.vue'
 
 /* istanbul ignore next */
-ProSqlTipTree.install = function(Vue) {
-  Vue.component(ProSqlTipTree.name, ProSqlTipTree);
-};
+ProSqlTipTree.install = function (Vue) {
+  Vue.component(ProSqlTipTree.name, ProSqlTipTree)
+}
 
-export default ProSqlTipTree;
+export default ProSqlTipTree
