@@ -1,5 +1,5 @@
 {
-  "name": "@ah-ailpha/docs",
+  "name": "docs",
   "private": true,
   "scripts": {
     "dev": "vuepress dev",

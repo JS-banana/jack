@@ -26,5 +26,8 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "view-design": "workspace:*"
   }
 }

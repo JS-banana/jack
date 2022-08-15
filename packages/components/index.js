@@ -1,5 +1,5 @@
-import AhButton from './button/index'
-import AhSelect from './select/index'
+import AhButton from './src/button/index'
+import AhSelect from './src/select/index'
 
 const components = {
   AhButton,

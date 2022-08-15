@@ -1,21 +1,25 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <!-- <hr/> -->
-    <Button>默认</Button>
-    <Button type="primary">按钮</Button>
-    <hr />
-    <ah-button>ah-button</ah-button>
-    <hr />
-    <!-- <ah-proSqlTipTree></ah-proSqlTipTree> -->
+    <Card>
+      <ah-button>ah-button</ah-button>
+    </Card>
+    <Divider />
+    <Card>
+      <ah-proSqlTipTree />
+    </Card>
+    <router-view />
   </div>
 </template>
 
 <script>
+import AhProSqlTipTree from '@ah-ailpha/pro-sqltiptree'
 export default {
   name: 'HelloWorld',
   props: {
     msg: String,
+  },
+  components: {
+    AhProSqlTipTree,
   },
 }
 </script>

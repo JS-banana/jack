@@ -1,0 +1,73 @@
+<template>
+  <Menu class="menu-container" :active-name="activeRoute" @on-select="handleMenuClick">
+    <template v-for="item in menuList">
+      <Submenu v-if="item.children && item.children.length" :name="item.name" :key="item.name">
+        <template #title>
+          <span>{{ item.name }}</span>
+        </template>
+        <MenuItem v-for="subItem in item.children" :name="subItem.path" :key="subItem.name">
+          {{ subItem.name }}
+        </MenuItem>
+      </Submenu>
+      <MenuItem v-else :name="item.path" :key="item.name">{{ item.name }}</MenuItem>
+    </template>
+  </Menu>
+</template>
+
+<script>
+import { router } from '../../router/index'
+export default {
+  name: 'LayoutMenu',
+  data: () => ({
+    activeRoute: '/',
+    menuList: [],
+  }),
+  mounted() {
+    console.log('router', router)
+    this.initMenu()
+  },
+  methods: {
+    handleMenuClick(name) {
+      console.log('name', name)
+      router.push(name)
+    },
+    initMenu() {
+      const routes = router.options.routes
+      const menuList = []
+      const formatMenu = (menu = []) => {
+        menu
+          .filter(n => n.name)
+          .forEach(item => {
+            if (item.children && item.children.length) {
+              menuList.push({
+                path: item.path,
+                name: item.name,
+                children: item.children.map(route => {
+                  return {
+                    path: item.path + route.path,
+                    name: route.name,
+                  }
+                }),
+              })
+            } else {
+              menuList.push({
+                path: item.path,
+                name: item.name,
+              })
+            }
+          })
+      }
+      formatMenu(routes)
+      this.menuList = menuList
+      console.log('menuList', menuList)
+    },
+  },
+}
+</script>
+
+<style lang="less" scoped>
+.menu-container {
+  width: 180px;
+  height: 100vh;
+}
+</style>

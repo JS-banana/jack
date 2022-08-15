@@ -1,8 +1,10 @@
 <template>
   <div :class="classes">
-    <h2>这是 <code>AhProSqlTipTree</code> 组件的demo测试</h2>
-    <!-- <br> -->
-    <p>你应该能看到上面的红色文字</p>
+    <Card title="AhProSqlTipTree 组件" style="width: 600px">
+      <Select v-model="model1">
+        <Option v-for="item in cityList" :key="item.value" :value="item.value">{{ item.label }}</Option>
+      </Select>
+    </Card>
   </div>
 </template>
 <script>
@@ -16,6 +18,37 @@ export default {
       type: Boolean,
       default: false,
     },
+  },
+  data() {
+    return {
+      cityList: [
+        {
+          value: 'New York',
+          label: 'New York',
+        },
+        {
+          value: 'London',
+          label: 'London',
+        },
+        {
+          value: 'Sydney',
+          label: 'Sydney',
+        },
+        {
+          value: 'Ottawa',
+          label: 'Ottawa',
+        },
+        {
+          value: 'Paris',
+          label: 'Paris',
+        },
+        {
+          value: 'Canberra',
+          label: 'Canberra',
+        },
+      ],
+      model1: '',
+    }
   },
   computed: {
     classes() {

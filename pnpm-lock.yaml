@@ -157,131 +157,36 @@ importers:
   examples:
     specifiers:
       '@ah-ailpha/components': workspace:*
+      '@ah-ailpha/pro-sqltiptree': workspace:*
       '@vue/cli': 4.5.19
       '@vue/cli-plugin-babel': ~4.5.19
       '@vue/cli-plugin-eslint': ~4.5.19
       '@vue/cli-service': ~4.5.19
       babel-eslint: ^10.1.0
       core-js: ^3.6.5
-      eslint: 4.18.2
-      eslint-config-elemefe: 0.1.1
-      eslint-loader: ^2.0.0
-      eslint-plugin-html: ^4.0.1
-      eslint-plugin-json: ^1.2.0
-      eslint-plugin-vue: ^4.7.1
+      eslint: 6.5.1
+      eslint-plugin-vue: ^6.1.2
+      view-design: workspace:*
       vue: ^2.6.11
       vue-template-compiler: ^2.6.11
     dependencies:
       '@ah-ailpha/components': link:../packages/components
+      '@ah-ailpha/pro-sqltiptree': link:../packages/pro-sqltiptree
       core-js: 3.23.5
+      view-design: link:../packages/view-design
       vue: 2.7.7
     devDependencies:
       '@vue/cli': 4.5.19
       '@vue/cli-plugin-babel': 4.5.19_5tqqh4a4b4g5qvksp7csds3k7a
-      '@vue/cli-plugin-eslint': 4.5.19_imhqhwpyqujbavyzzl3tazzmdy
+      '@vue/cli-plugin-eslint': 4.5.19_4fmrd4bl7ndk3ypo6aafufqzpu
       '@vue/cli-service': 4.5.19_bsfvtfsktrde675atkxiqnygju
-      babel-eslint: 10.1.0_eslint@4.18.2
-      eslint: 4.18.2
-      eslint-config-elemefe: 0.1.1
-      eslint-loader: 2.2.1_eslint@4.18.2
-      eslint-plugin-html: 4.0.6
-      eslint-plugin-json: 1.4.0
-      eslint-plugin-vue: 4.7.1_eslint@4.18.2
+      babel-eslint: 10.1.0_eslint@6.5.1
+      eslint: 6.5.1
+      eslint-plugin-vue: 6.2.2_eslint@6.5.1
       vue-template-compiler: 2.7.7
 
   packages/components:
-    specifiers:
-      autoprefixer: ^9.6.4
-      autoprefixer-loader: ^3.2.0
-      babel-cli: ^6.26.0
-      babel-core: ^6.26.0
-      babel-eslint: ^10.1.0
-      babel-helper-vue-jsx-merge-props: ^2.0.3
-      babel-loader: ^7.1.5
-      babel-plugin-dynamic-import-node: ^1.2.0
-      babel-plugin-syntax-jsx: ^6.18.0
-      babel-plugin-transform-class-properties: ^6.24.1
-      babel-plugin-transform-es5-property-mutators: ^6.24.1
-      babel-plugin-transform-object-rest-spread: ^6.26.0
-      babel-plugin-transform-runtime: ^6.23.0
-      babel-plugin-transform-vue-jsx: ^3.7.0
-      babel-preset-env: ^1.6.1
-      babel-preset-stage-2: 6.24.1
-      babel-preset-stage-3: ^6.24.1
-      babel-runtime: ^6.26.0
-      compression-webpack-plugin: ^1.1.12
-      copy-webpack-plugin: ^4.6.0
-      css-loader: ^3.2.0
-      cssnano: ^4.1.10
-      extract-text-webpack-plugin: ^2.1.2
-      file-loader: ^1.1.11
-      html-loader: ^0.5.5
-      html-webpack-plugin: ^3.0.6
-      lerna: ^5.3.0
-      less: ^2.7.3
-      less-loader: ^4.0.6
-      mini-css-extract-plugin: ^0.8.0
-      optimize-css-assets-webpack-plugin: ^5.0.3
-      postcss-loader: ^3.0.0
-      prettier: 1.18.2
-      style-loader: ^1.0.0
-      uglifyjs-webpack-plugin: ^2.2.0
-      url-loader: ^1.1.2
-      vue: ^2.6.12
-      vue-hot-reload-api: ^2.3.1
-      vue-html-loader: ^1.2.4
-      vue-loader: ^14.2.1
-      vue-style-loader: ^4.1.2
-      vue-template-compiler: ^2.6.12
-      webpack: ^4.39.1
-      webpack-cli: ^3.3.6
-      webpack-merge: ^4.2.1
-    devDependencies:
-      autoprefixer: 9.8.8
-      autoprefixer-loader: 3.2.0
-      babel-cli: 6.26.0
-      babel-core: 6.26.3
-      babel-eslint: 10.1.0
-      babel-helper-vue-jsx-merge-props: 2.0.3
-      babel-loader: 7.1.5_bastiv6eh6a5mui3csmnhyhq2m
-      babel-plugin-dynamic-import-node: 1.2.0
-      babel-plugin-syntax-jsx: 6.18.0
-      babel-plugin-transform-class-properties: 6.24.1
-      babel-plugin-transform-es5-property-mutators: 6.24.1
-      babel-plugin-transform-object-rest-spread: 6.26.0
-      babel-plugin-transform-runtime: 6.23.0
-      babel-plugin-transform-vue-jsx: 3.7.0_lnx4dmmlatcxlugolp73r5j3ta
-      babel-preset-env: 1.7.0
-      babel-preset-stage-2: 6.24.1
-      babel-preset-stage-3: 6.24.1
-      babel-runtime: 6.26.0
-      compression-webpack-plugin: 1.1.12_webpack@4.46.0
-      copy-webpack-plugin: 4.6.0
-      css-loader: 3.6.0_webpack@4.46.0
-      cssnano: 4.1.11
-      extract-text-webpack-plugin: 2.1.2_webpack@4.46.0
-      file-loader: 1.1.11_webpack@4.46.0
-      html-loader: 0.5.5
-      html-webpack-plugin: 3.2.0_webpack@4.46.0
-      lerna: 5.3.0
-      less: 2.7.3
-      less-loader: 4.1.0_less@2.7.3+webpack@4.46.0
-      mini-css-extract-plugin: 0.8.2_webpack@4.46.0
-      optimize-css-assets-webpack-plugin: 5.0.8_webpack@4.46.0
-      postcss-loader: 3.0.0
-      prettier: 1.18.2
-      style-loader: 1.3.0_webpack@4.46.0
-      uglifyjs-webpack-plugin: 2.2.0_webpack@4.46.0
-      url-loader: 1.1.2_webpack@4.46.0
-      vue: 2.7.7
-      vue-hot-reload-api: 2.3.4
-      vue-html-loader: 1.2.4
-      vue-loader: 14.2.4_wqhvroyjxmjxsyduyabolr6som
-      vue-style-loader: 4.1.3
-      vue-template-compiler: 2.7.7
-      webpack: 4.46.0_webpack-cli@3.3.12
-      webpack-cli: 3.3.12_webpack@4.46.0
-      webpack-merge: 4.2.2
+    specifiers: {}
 
   packages/demo:
     specifiers:
@@ -290,7 +195,10 @@ importers:
       '@ah-ailpha/pro-sqltiptree': link:../pro-sqltiptree
 
   packages/pro-sqltiptree:
-    specifiers: {}
+    specifiers:
+      view-design: workspace:*
+    dependencies:
+      view-design: link:../view-design
 
   packages/view-design:
     specifiers:
@@ -4024,7 +3932,7 @@ packages:
       - webpack-command
     dev: true
 
-  /@vue/cli-plugin-eslint/4.5.19_imhqhwpyqujbavyzzl3tazzmdy:
+  /@vue/cli-plugin-eslint/4.5.19_4fmrd4bl7ndk3ypo6aafufqzpu:
     resolution: {integrity: sha512-53sa4Pu9j5KajesFlj494CcO8vVo3e3nnZ1CCKjGGnrF90id1rUeepcFfz5XjwfEtbJZp2x/NoX/EZE6zCzSFQ==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/@vue/cli-plugin-eslint/-/cli-plugin-eslint-4.5.19.tgz}
     peerDependencies:
       '@vue/cli-service': ^3.0.0 || ^4.0.0-0
@@ -4032,8 +3940,8 @@ packages:
     dependencies:
       '@vue/cli-service': 4.5.19_bsfvtfsktrde675atkxiqnygju
       '@vue/cli-shared-utils': 4.5.19
-      eslint: 4.18.2
-      eslint-loader: 2.2.1_7qhi3uid2wvtbizuqtyxpnymxe
+      eslint: 6.5.1
+      eslint-loader: 2.2.1_jzmil3ksoeckxga4frsezx2joe
       globby: 9.2.0
       inquirer: 7.3.3
       webpack: 4.46.0
@@ -5036,14 +4944,6 @@ packages:
       ajv: 4.11.8
     dev: true
 
-  /ajv-keywords/2.1.1_ajv@5.5.2:
-    resolution: {integrity: sha512-ZFztHzVRdGLAzJmpUT9LNFLe1YiVOEylcaNpEutM26PVTCtOD919IMfD01CgbRouB42Dd9atjx1HseC15DgOZA==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/ajv-keywords/-/ajv-keywords-2.1.1.tgz}
-    peerDependencies:
-      ajv: ^5.0.0
-    dependencies:
-      ajv: 5.5.2
-    dev: true
-
   /ajv-keywords/3.5.2_ajv@6.12.6:
     resolution: {integrity: sha512-5p6WTN0DdTGVQk6VjcEju19IgaHudalcfabD7yhDGeA6bcQnmL+CpveLJq/3hvfwd1aof6L386Ougkx6RfyMIQ==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/ajv-keywords/-/ajv-keywords-3.5.2.tgz}
     peerDependencies:
@@ -5638,7 +5538,7 @@ packages:
     dev: true
 
   /array-flatten/2.1.2:
-    resolution: {integrity: sha512-hNfzcOV8W4NdualtqBFPyVO+54DSJuZGY9qT4pRroB6S9e3iiido2ISIC5h9R2sPJ8H3FHCIiEnsv1lPXO3KtQ==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-hNfzcOV8W4NdualtqBFPyVO+54DSJuZGY9qT4pRroB6S9e3iiido2ISIC5h9R2sPJ8H3FHCIiEnsv1lPXO3KtQ==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/array-flatten/-/array-flatten-2.1.2.tgz}
     dev: true
 
   /array-from/2.1.1:
@@ -6009,41 +5909,6 @@ packages:
       '@babel/core': 7.18.9
     dev: true
 
-  /babel-eslint/10.1.0:
-    resolution: {integrity: sha512-ifWaTHQ0ce+448CYop8AdrQiBsGrnC+bMgfyKFdi6EsPLTAWG+QfyDeM6OH+FmWnKvEq5NnBMLvlBUPKQZoDSg==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/babel-eslint/-/babel-eslint-10.1.0.tgz}
-    engines: {node: '>=6'}
-    deprecated: babel-eslint is now @babel/eslint-parser. This package will no longer receive updates.
-    peerDependencies:
-      eslint: '>= 4.12.1'
-    dependencies:
-      '@babel/code-frame': 7.18.6
-      '@babel/parser': 7.18.9
-      '@babel/traverse': 7.18.9
-      '@babel/types': 7.18.9
-      eslint-visitor-keys: 1.3.0
-      resolve: 1.22.1
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /babel-eslint/10.1.0_eslint@4.18.2:
-    resolution: {integrity: sha512-ifWaTHQ0ce+448CYop8AdrQiBsGrnC+bMgfyKFdi6EsPLTAWG+QfyDeM6OH+FmWnKvEq5NnBMLvlBUPKQZoDSg==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/babel-eslint/-/babel-eslint-10.1.0.tgz}
-    engines: {node: '>=6'}
-    deprecated: babel-eslint is now @babel/eslint-parser. This package will no longer receive updates.
-    peerDependencies:
-      eslint: '>= 4.12.1'
-    dependencies:
-      '@babel/code-frame': 7.18.6
-      '@babel/parser': 7.18.9
-      '@babel/traverse': 7.18.9
-      '@babel/types': 7.18.9
-      eslint: 4.18.2
-      eslint-visitor-keys: 1.3.0
-      resolve: 1.22.1
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /babel-eslint/10.1.0_eslint@6.5.1:
     resolution: {integrity: sha512-ifWaTHQ0ce+448CYop8AdrQiBsGrnC+bMgfyKFdi6EsPLTAWG+QfyDeM6OH+FmWnKvEq5NnBMLvlBUPKQZoDSg==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/babel-eslint/-/babel-eslint-10.1.0.tgz}
     engines: {node: '>=6'}
@@ -6073,16 +5938,6 @@ packages:
       lodash: 4.17.21
       source-map: 0.5.7
       trim-right: 1.0.1
-    dev: true
-
-  /babel-helper-bindify-decorators/6.24.1:
-    resolution: {integrity: sha512-TYX2QQATKA6Wssp6j7jqlw4QLmABDN1olRdEHndYvBXdaXM5dcx6j5rN0+nd+aVL+Th40fAEYvvw/Xxd/LETuQ==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/babel-helper-bindify-decorators/-/babel-helper-bindify-decorators-6.24.1.tgz}
-    dependencies:
-      babel-runtime: 6.26.0
-      babel-traverse: 6.26.0
-      babel-types: 6.26.0
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /babel-helper-builder-binary-assignment-operator-visitor/6.24.1:
@@ -6120,17 +5975,6 @@ packages:
   /babel-helper-explode-assignable-expression/6.24.1:
     resolution: {integrity: sha512-qe5csbhbvq6ccry9G7tkXbzNtcDiH4r51rrPUbwwoTzZ18AqxWYRZT6AOmxrpxKnQBW0pYlBI/8vh73Z//78nQ==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/babel-helper-explode-assignable-expression/-/babel-helper-explode-assignable-expression-6.24.1.tgz}
     dependencies:
-      babel-runtime: 6.26.0
-      babel-traverse: 6.26.0
-      babel-types: 6.26.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /babel-helper-explode-class/6.24.1:
-    resolution: {integrity: sha512-SFbWewr0/0U4AiRzsHqwsbOQeLXVa9T1ELdqEa2efcQB5KopTnunAqoj07TuHlN2lfTQNPGO/rJR4FMln5fVcA==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/babel-helper-explode-class/-/babel-helper-explode-class-6.24.1.tgz}
-    dependencies:
-      babel-helper-bindify-decorators: 6.24.1
       babel-runtime: 6.26.0
       babel-traverse: 6.26.0
       babel-types: 6.26.0
@@ -6257,7 +6101,7 @@ packages:
       loader-utils: 2.0.2
       make-dir: 3.1.0
       schema-utils: 2.7.1
-      webpack: 4.46.0_webpack-cli@3.3.12
+      webpack: 4.46.0
     dev: true
 
   /babel-messages/6.23.0:
@@ -6332,10 +6176,6 @@ packages:
     resolution: {integrity: sha512-chI3Rt9T1AbrQD1s+vxw3KcwC9yHtF621/MacuItITfZX344uhQoANjpoSJZleAmW2tjlolqB/f+h7jIqXa7pA==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/babel-plugin-syntax-class-properties/-/babel-plugin-syntax-class-properties-6.13.0.tgz}
     dev: true
 
-  /babel-plugin-syntax-decorators/6.13.0:
-    resolution: {integrity: sha512-AWj19x2aDm8qFQ5O2JcD6pwJDW1YdcnO+1b81t7gxrGjz5VHiUqeYWAR4h7zueWMalRelrQDXprv2FrY1dbpbw==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/babel-plugin-syntax-decorators/-/babel-plugin-syntax-decorators-6.13.0.tgz}
-    dev: true
-
   /babel-plugin-syntax-dynamic-import/6.18.0:
     resolution: {integrity: sha512-MioUE+LfjCEz65Wf7Z/Rm4XCP5k2c+TbMd2Z2JKc7U9uwjBhAfNPE48KC4GTGKhppMeYVepwDBNO/nGY6NYHBA==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/babel-plugin-syntax-dynamic-import/-/babel-plugin-syntax-dynamic-import-6.18.0.tgz}
     dev: true
@@ -6383,18 +6223,6 @@ packages:
       babel-plugin-syntax-class-properties: 6.13.0
       babel-runtime: 6.26.0
       babel-template: 6.26.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /babel-plugin-transform-decorators/6.24.1:
-    resolution: {integrity: sha512-skQ2CImwDkCHu0mkWvCOlBCpBIHW4/49IZWVwV4A/EnWjL9bB6UBvLyMNe3Td5XDStSZNhe69j4bfEW8dvUbew==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/babel-plugin-transform-decorators/-/babel-plugin-transform-decorators-6.24.1.tgz}
-    dependencies:
-      babel-helper-explode-class: 6.24.1
-      babel-plugin-syntax-decorators: 6.13.0
-      babel-runtime: 6.26.0
-      babel-template: 6.26.0
-      babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -6682,17 +6510,6 @@ packages:
       browserslist: 3.2.8
       invariant: 2.2.4
       semver: 5.7.1
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /babel-preset-stage-2/6.24.1:
-    resolution: {integrity: sha512-9F+nquz+37PrlTSBdpeQBKnQfAMNBnryXw+m4qBh35FNbJPfzZz+sjN2G5Uf1CRedU9PH7fJkTbYijxmkLX8Og==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/babel-preset-stage-2/-/babel-preset-stage-2-6.24.1.tgz}
-    dependencies:
-      babel-plugin-syntax-dynamic-import: 6.18.0
-      babel-plugin-transform-class-properties: 6.24.1
-      babel-plugin-transform-decorators: 6.24.1
-      babel-preset-stage-3: 6.24.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -7267,7 +7084,7 @@ packages:
     dev: true
 
   /buffer-indexof/1.1.1:
-    resolution: {integrity: sha512-4/rOEg86jivtPTeOUUT61jJO1Ya1TrR/OkqCSZDyq84WJh3LuuiphBYJN+fm5xufIk4XAFcEwte/8WzC8If/1g==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-4/rOEg86jivtPTeOUUT61jJO1Ya1TrR/OkqCSZDyq84WJh3LuuiphBYJN+fm5xufIk4XAFcEwte/8WzC8If/1g==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/buffer-indexof/-/buffer-indexof-1.1.1.tgz}
     dev: true
 
   /buffer-json/2.0.0:
@@ -7473,7 +7290,7 @@ packages:
       mkdirp: 0.5.6
       neo-async: 2.6.2
       schema-utils: 2.7.1
-      webpack: 4.46.0_webpack-cli@3.3.12
+      webpack: 4.46.0
     dev: true
 
   /cacheable-request/2.1.4:
@@ -7744,10 +7561,6 @@ packages:
       upper-case-first: 1.1.2
     dev: true
 
-  /chardet/0.4.2:
-    resolution: {integrity: sha512-j/Toj7f1z98Hh2cYo2BVr85EpIRWqUi7rtRSGxh/cqUjqrnJe9l9UE7IUGd2vQ2p+kSHLkSzObQPZPLUC6TQwg==}
-    dev: true
-
   /chardet/0.7.0:
     resolution: {integrity: sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==}
     dev: true
@@ -7895,7 +7708,7 @@ packages:
     dev: true
 
   /ci-info/1.6.0:
-    resolution: {integrity: sha512-vsGdkwSCDpWmP80ncATX7iea5DWQemg1UgCW5J8tqjU3lYw4FBYuj89J0CTVomA7BEfvSZd84GmHko+MxFQU2A==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-vsGdkwSCDpWmP80ncATX7iea5DWQemg1UgCW5J8tqjU3lYw4FBYuj89J0CTVomA7BEfvSZd84GmHko+MxFQU2A==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/ci-info/-/ci-info-1.6.0.tgz}
     dev: true
 
   /ci-info/2.0.0:
@@ -9378,7 +9191,7 @@ packages:
       postcss-value-parser: 4.2.0
       schema-utils: 2.7.1
       semver: 6.3.0
-      webpack: 4.46.0_webpack-cli@3.3.12
+      webpack: 4.46.0
     dev: true
 
   /css-parse/2.0.0:
@@ -9933,7 +9746,7 @@ packages:
     dev: true
 
   /deep-equal/1.1.1:
-    resolution: {integrity: sha512-yd9c5AdiqVcR+JjcwUQb9DkhJc8ngNr0MahEBGvDiJw8puWab2yZlh+nkasOnZP+EGTAP6rRp2JzJhJZzvNF8g==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-yd9c5AdiqVcR+JjcwUQb9DkhJc8ngNr0MahEBGvDiJw8puWab2yZlh+nkasOnZP+EGTAP6rRp2JzJhJZzvNF8g==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/deep-equal/-/deep-equal-1.1.1.tgz}
     dependencies:
       is-arguments: 1.1.1
       is-date-object: 1.0.5
@@ -10186,18 +9999,18 @@ packages:
     dev: true
 
   /dns-equal/1.0.0:
-    resolution: {integrity: sha512-z+paD6YUQsk+AbGCEM4PrOXSss5gd66QfcVBFTKR/HpFL9jCqikS94HYwKww6fQyO7IxrIIyUu+g0Ka9tUS2Cg==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-z+paD6YUQsk+AbGCEM4PrOXSss5gd66QfcVBFTKR/HpFL9jCqikS94HYwKww6fQyO7IxrIIyUu+g0Ka9tUS2Cg==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/dns-equal/-/dns-equal-1.0.0.tgz}
     dev: true
 
   /dns-packet/1.3.4:
-    resolution: {integrity: sha512-BQ6F4vycLXBvdrJZ6S3gZewt6rcrks9KBgM9vrhW+knGRqc8uEdT7fuCwloc7nny5xNoMJ17HGH0R/6fpo8ECA==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-BQ6F4vycLXBvdrJZ6S3gZewt6rcrks9KBgM9vrhW+knGRqc8uEdT7fuCwloc7nny5xNoMJ17HGH0R/6fpo8ECA==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/dns-packet/-/dns-packet-1.3.4.tgz}
     dependencies:
       ip: 1.1.8
       safe-buffer: 5.2.1
     dev: true
 
   /dns-txt/2.0.2:
-    resolution: {integrity: sha512-Ix5PrWjphuSoUXV/Zv5gaFHjnaJtb02F2+Si3Ht9dyJ87+Z/lMmy+dpNHtTGraNK958ndXq2i+GLkWsWHcKaBQ==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-Ix5PrWjphuSoUXV/Zv5gaFHjnaJtb02F2+Si3Ht9dyJ87+Z/lMmy+dpNHtTGraNK958ndXq2i+GLkWsWHcKaBQ==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/dns-txt/-/dns-txt-2.0.2.tgz}
     dependencies:
       buffer-indexof: 1.1.1
     dev: true
@@ -10411,7 +10224,7 @@ packages:
     dev: true
 
   /ee-first/1.1.1:
-    resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/ee-first/-/ee-first-1.1.1.tgz}
     dev: true
 
   /ejs/2.7.4:
@@ -10979,10 +10792,6 @@ packages:
       estraverse: 4.3.0
     dev: true
 
-  /eslint-config-elemefe/0.1.1:
-    resolution: {integrity: sha512-x4gKfxRWKqlbs6AjHihhlUr/6JCF1NtujW/rGidpDOijquMR60zpxztP1fqItUjZbDZoXHa6N2KUvyPDvhBZ4g==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/eslint-config-elemefe/-/eslint-config-elemefe-0.1.1.tgz}
-    dev: true
-
   /eslint-config-prettier/8.5.0_eslint@6.5.1:
     resolution: {integrity: sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==}
     hasBin: true
@@ -11039,35 +10848,20 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-loader/2.2.1_7qhi3uid2wvtbizuqtyxpnymxe:
+  /eslint-loader/2.2.1_jzmil3ksoeckxga4frsezx2joe:
     resolution: {integrity: sha512-RLgV9hoCVsMLvOxCuNjdqOrUqIj9oJg8hF44vzJaYqsAHuY9G2YAeN3joQ9nxP0p5Th9iFSIpKo+SD8KISxXRg==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/eslint-loader/-/eslint-loader-2.2.1.tgz}
     deprecated: This loader has been deprecated. Please use eslint-webpack-plugin
     peerDependencies:
       eslint: '>=1.6.0 <7.0.0'
       webpack: '>=2.0.0 <5.0.0'
     dependencies:
-      eslint: 4.18.2
+      eslint: 6.5.1
       loader-fs-cache: 1.0.3
       loader-utils: 1.4.0
       object-assign: 4.1.1
       object-hash: 1.3.1
       rimraf: 2.7.1
       webpack: 4.46.0
-    dev: true
-
-  /eslint-loader/2.2.1_eslint@4.18.2:
-    resolution: {integrity: sha512-RLgV9hoCVsMLvOxCuNjdqOrUqIj9oJg8hF44vzJaYqsAHuY9G2YAeN3joQ9nxP0p5Th9iFSIpKo+SD8KISxXRg==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/eslint-loader/-/eslint-loader-2.2.1.tgz}
-    deprecated: This loader has been deprecated. Please use eslint-webpack-plugin
-    peerDependencies:
-      eslint: '>=1.6.0 <7.0.0'
-      webpack: '>=2.0.0 <5.0.0'
-    dependencies:
-      eslint: 4.18.2
-      loader-fs-cache: 1.0.3
-      loader-utils: 1.4.0
-      object-assign: 4.1.1
-      object-hash: 1.3.1
-      rimraf: 2.7.1
     dev: true
 
   /eslint-module-utils/2.7.4_hfupw46i6lybcanany6blybvue:
@@ -11117,12 +10911,6 @@ packages:
       semver: 5.7.1
     dev: true
 
-  /eslint-plugin-html/4.0.6:
-    resolution: {integrity: sha512-nj6A9oK+7BKnMm0E7dMRH3r75BfpkXtcVIb3pFC4AcDdBTNyg2NGxHXyFNT1emW4VsR7P2SZvRXXQtUR+kY08w==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/eslint-plugin-html/-/eslint-plugin-html-4.0.6.tgz}
-    dependencies:
-      htmlparser2: 3.10.1
-    dev: true
-
   /eslint-plugin-import/2.26.0_5hfmrm7wjvjgrczmznl3h4mlke:
     resolution: {integrity: sha512-hYfi3FXaM8WPLf4S1cikh/r4IxnO6zrhZbEGz2b660EJRbuxgpDS5gkCuYgGWg2xxh2rBuIr4Pvhve/7c31koA==}
     engines: {node: '>=4'}
@@ -11152,13 +10940,6 @@ packages:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
       - supports-color
-    dev: true
-
-  /eslint-plugin-json/1.4.0:
-    resolution: {integrity: sha512-CECvgRAWtUzuepdlPWd+VA7fhyF9HT183pZnl8wQw5x699Mk/MbME/q8xtULBfooi3LUbj6fToieNmsvUcDxWA==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/eslint-plugin-json/-/eslint-plugin-json-1.4.0.tgz}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      vscode-json-languageservice: 3.11.0
     dev: true
 
   /eslint-plugin-node/11.1.0_eslint@6.5.1:
@@ -11234,18 +11015,6 @@ packages:
       eslint-plugin-react: 7.30.1_eslint@3.19.0
     dev: true
 
-  /eslint-plugin-vue/4.7.1_eslint@4.18.2:
-    resolution: {integrity: sha512-esETKhVMI7Vdli70Wt4bvAwnZBJeM0pxVX9Yb0wWKxdCJc2EADalVYK/q2FzMw8oKN0wPMdqVCKS8kmR89recA==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/eslint-plugin-vue/-/eslint-plugin-vue-4.7.1.tgz}
-    engines: {node: '>=4'}
-    peerDependencies:
-      eslint: ^3.18.0 || ^4.0.0
-    dependencies:
-      eslint: 4.18.2
-      vue-eslint-parser: 2.0.3_eslint@4.18.2
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /eslint-plugin-vue/6.2.2_eslint@6.5.1:
     resolution: {integrity: sha512-Nhc+oVAHm0uz/PkJAWscwIT4ijTrK5fqNqz9QB1D35SbbuMG1uB6Yr5AJpvPSWg+WOw7nYNswerYh0kOk64gqQ==}
     engines: {node: '>=8.10'}
@@ -11258,14 +11027,6 @@ packages:
       vue-eslint-parser: 7.11.0_eslint@6.5.1
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /eslint-scope/3.7.3:
-    resolution: {integrity: sha512-W+B0SvF4gamyCTmUc+uITPY0989iXVfKvhwtmJocTaYoc/3khEHmEmvfY/Gn9HA9VV75jrQECsHizkNw1b68FA==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/eslint-scope/-/eslint-scope-3.7.3.tgz}
-    engines: {node: '>=4.0.0'}
-    dependencies:
-      esrecurse: 4.3.0
-      estraverse: 4.3.0
     dev: true
 
   /eslint-scope/4.0.3:
@@ -11299,7 +11060,7 @@ packages:
     dev: true
 
   /eslint-visitor-keys/1.3.0:
-    resolution: {integrity: sha512-6J72N8UNa462wa/KFODt/PJ3IU60SDpC3QXC1Hjc1BXXpfL2C9R5+AU7jhe0F6GREqVMh4Juu+NY7xn+6dipUQ==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/eslint-visitor-keys/-/eslint-visitor-keys-1.3.0.tgz}
+    resolution: {integrity: sha512-6J72N8UNa462wa/KFODt/PJ3IU60SDpC3QXC1Hjc1BXXpfL2C9R5+AU7jhe0F6GREqVMh4Juu+NY7xn+6dipUQ==}
     engines: {node: '>=4'}
     dev: true
 
@@ -11343,52 +11104,6 @@ packages:
       table: 3.8.3
       text-table: 0.2.0
       user-home: 2.0.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /eslint/4.18.2:
-    resolution: {integrity: sha512-qy4i3wODqKMYfz9LUI8N2qYDkHkoieTbiHpMrYUI/WbjhXJQr7lI4VngixTgaG+yHX+NBCv7nW4hA0ShbvaNKw==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/eslint/-/eslint-4.18.2.tgz}
-    engines: {node: '>=4'}
-    hasBin: true
-    dependencies:
-      ajv: 5.5.2
-      babel-code-frame: 6.26.0
-      chalk: 2.4.2
-      concat-stream: 1.6.2
-      cross-spawn: 5.1.0
-      debug: 3.2.7
-      doctrine: 2.1.0
-      eslint-scope: 3.7.3
-      eslint-visitor-keys: 1.3.0
-      espree: 3.5.4
-      esquery: 1.4.0
-      esutils: 2.0.3
-      file-entry-cache: 2.0.0
-      functional-red-black-tree: 1.0.1
-      glob: 7.2.3
-      globals: 11.12.0
-      ignore: 3.3.10
-      imurmurhash: 0.1.4
-      inquirer: 3.3.0
-      is-resolvable: 1.1.0
-      js-yaml: 3.14.1
-      json-stable-stringify-without-jsonify: 1.0.1
-      levn: 0.3.0
-      lodash: 4.17.21
-      minimatch: 3.1.2
-      mkdirp: 0.5.6
-      natural-compare: 1.4.0
-      optionator: 0.8.3
-      path-is-inside: 1.0.2
-      pluralize: 7.0.0
-      progress: 2.0.3
-      require-uncached: 1.0.3
-      semver: 5.7.1
-      strip-ansi: 4.0.0
-      strip-json-comments: 2.0.1
-      table: 4.0.2
-      text-table: 0.2.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -11586,7 +11301,7 @@ packages:
     dev: true
 
   /execa/0.8.0:
-    resolution: {integrity: sha512-zDWS+Rb1E8BlqqhALSt9kUhss8Qq4nN3iof3gsOdyINksElaPyNBtKUMTR62qhvgVWR0CqCX7sdnKe4MnUbFEA==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-zDWS+Rb1E8BlqqhALSt9kUhss8Qq4nN3iof3gsOdyINksElaPyNBtKUMTR62qhvgVWR0CqCX7sdnKe4MnUbFEA==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/execa/-/execa-0.8.0.tgz}
     engines: {node: '>=4'}
     dependencies:
       cross-spawn: 5.1.0
@@ -11946,15 +11661,6 @@ packages:
 
   /extendable-error/0.1.7:
     resolution: {integrity: sha512-UOiS2in6/Q0FK0R0q6UY9vYpQ21mr/Qn1KOnte7vsACuNJf514WvCCUHSRCPcgjPT2bAhNIJdlE6bVap1GKmeg==}
-    dev: true
-
-  /external-editor/2.2.0:
-    resolution: {integrity: sha512-bSn6gvGxKt+b7+6TKEv1ZycHleA7aHhRHyAqJyp5pbUFuYYNIzpZnQDk7AsYckyWdEnTeAnay0aCy2aV6iTk9A==}
-    engines: {node: '>=0.12'}
-    dependencies:
-      chardet: 0.4.2
-      iconv-lite: 0.4.24
-      tmp: 0.0.33
     dev: true
 
   /external-editor/3.1.0:
@@ -12690,7 +12396,7 @@ packages:
     dev: true
 
   /forwarded/0.2.0:
-    resolution: {integrity: sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/forwarded/-/forwarded-0.2.0.tgz}
     engines: {node: '>= 0.6'}
     dev: true
 
@@ -14037,7 +13743,7 @@ packages:
       tapable: 1.1.3
       toposort: 1.0.7
       util.promisify: 1.0.0
-      webpack: 4.46.0_webpack-cli@3.3.12
+      webpack: 4.46.0
     dev: true
 
   /htmlparser2/3.10.1:
@@ -14576,25 +14282,6 @@ packages:
       through: 2.3.8
     dev: true
 
-  /inquirer/3.3.0:
-    resolution: {integrity: sha512-h+xtnyk4EwKvFWHrUYsWErEVR+igKtLdchu+o0Z1RL7VU/jVMFbYir2bp6bAj8efFNxWqHX0dIss6fJQ+/+qeQ==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/inquirer/-/inquirer-3.3.0.tgz}
-    dependencies:
-      ansi-escapes: 3.2.0
-      chalk: 2.4.2
-      cli-cursor: 2.1.0
-      cli-width: 2.2.1
-      external-editor: 2.2.0
-      figures: 2.0.0
-      lodash: 4.17.21
-      mute-stream: 0.0.7
-      run-async: 2.4.1
-      rx-lite: 4.0.8
-      rx-lite-aggregates: 4.0.8
-      string-width: 2.1.1
-      strip-ansi: 4.0.0
-      through: 2.3.8
-    dev: true
-
   /inquirer/6.5.2:
     resolution: {integrity: sha512-cntlB5ghuB0iuO65Ovoi8ogLHiWGs/5yNrtUcKjFhSSiVeAIVpD7koaSU9RM8mpXw5YDi9RdYXGQMaOURB7ycQ==}
     engines: {node: '>=6.0.0'}
@@ -14766,7 +14453,7 @@ packages:
     dev: true
 
   /is-arguments/1.1.1:
-    resolution: {integrity: sha512-8Q7EARjzEnKpt/PCD7e1cgUS0a6X8u5tdSiMqXhojOdoV9TsMsiO+9VLC5vAmO8N7/GmXn7yjR8qnA6bVAEzfA==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-8Q7EARjzEnKpt/PCD7e1cgUS0a6X8u5tdSiMqXhojOdoV9TsMsiO+9VLC5vAmO8N7/GmXn7yjR8qnA6bVAEzfA==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/is-arguments/-/is-arguments-1.1.1.tgz}
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
@@ -14819,7 +14506,7 @@ packages:
     dev: true
 
   /is-ci/1.2.1:
-    resolution: {integrity: sha512-s6tfsaQaQi3JNciBH6shVqEDvhGut0SUXr31ag8Pd8BBbVVlcGfWhpPmEOoM6RJ5TFhbypvf5yyRw/VXW1IiWg==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-s6tfsaQaQi3JNciBH6shVqEDvhGut0SUXr31ag8Pd8BBbVVlcGfWhpPmEOoM6RJ5TFhbypvf5yyRw/VXW1IiWg==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/is-ci/-/is-ci-1.2.1.tgz}
     hasBin: true
     dependencies:
       ci-info: 1.6.0
@@ -16774,7 +16461,7 @@ packages:
     dev: true
 
   /media-typer/0.3.0:
-    resolution: {integrity: sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/media-typer/-/media-typer-0.3.0.tgz}
     engines: {node: '>= 0.6'}
     dev: true
 
@@ -17359,11 +17046,11 @@ packages:
     dev: true
 
   /multicast-dns-service-types/1.1.0:
-    resolution: {integrity: sha512-cnAsSVxIDsYt0v7HmC0hWZFwwXSh+E6PgCrREDuN/EsjgLwA5XRmlMHhSiDPrt6HxY1gTivEa/Zh7GtODoLevQ==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-cnAsSVxIDsYt0v7HmC0hWZFwwXSh+E6PgCrREDuN/EsjgLwA5XRmlMHhSiDPrt6HxY1gTivEa/Zh7GtODoLevQ==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/multicast-dns-service-types/-/multicast-dns-service-types-1.1.0.tgz}
     dev: true
 
   /multicast-dns/6.2.3:
-    resolution: {integrity: sha512-ji6J5enbMyGRHIAkAOu3WdV8nggqviKCEKtXcOqfphZZtQrmHKycfynJ2V7eVPUA4NhJ6V7Wf4TmGbTwKE9B6g==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-ji6J5enbMyGRHIAkAOu3WdV8nggqviKCEKtXcOqfphZZtQrmHKycfynJ2V7eVPUA4NhJ6V7Wf4TmGbTwKE9B6g==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/multicast-dns/-/multicast-dns-6.2.3.tgz}
     hasBin: true
     dependencies:
       dns-packet: 1.3.4
@@ -17603,7 +17290,7 @@ packages:
     dev: true
 
   /node-forge/0.10.0:
-    resolution: {integrity: sha512-PPmu8eEeG9saEUvI97fm4OYxXVB6bFvyNTyiUOBichBpFG8A1Ljw3bY62+5oOjDEMHRnd0Y7HQ+x7uzxOzC6JA==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-PPmu8eEeG9saEUvI97fm4OYxXVB6bFvyNTyiUOBichBpFG8A1Ljw3bY62+5oOjDEMHRnd0Y7HQ+x7uzxOzC6JA==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/node-forge/-/node-forge-0.10.0.tgz}
     engines: {node: '>= 6.0.0'}
     dev: true
 
@@ -17793,7 +17480,7 @@ packages:
     dev: true
 
   /normalize-path/1.0.0:
-    resolution: {integrity: sha512-7WyT0w8jhpDStXRq5836AMmihQwq2nrUVQrgjvUo/p/NZf9uy/MeJ246lBJVmWuYXMlJuG9BNZHF0hWjfTbQUA==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-7WyT0w8jhpDStXRq5836AMmihQwq2nrUVQrgjvUo/p/NZf9uy/MeJ246lBJVmWuYXMlJuG9BNZHF0hWjfTbQUA==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/normalize-path/-/normalize-path-1.0.0.tgz}
     engines: {node: '>=0.10.0'}
     dev: true
 
@@ -18077,7 +17764,7 @@ packages:
     dev: true
 
   /object-is/1.1.5:
-    resolution: {integrity: sha512-3cyDsyHgtmi7I7DfSSI2LDp6SK2lwvtbg0p0R1e0RvTqF5ceGx+K2dfSjm1bKDMVCFEDAQvy+o8c6a7VujOddw==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-3cyDsyHgtmi7I7DfSSI2LDp6SK2lwvtbg0p0R1e0RvTqF5ceGx+K2dfSjm1bKDMVCFEDAQvy+o8c6a7VujOddw==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/object-is/-/object-is-1.1.5.tgz}
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
@@ -19064,11 +18751,6 @@ packages:
 
   /pluralize/1.2.1:
     resolution: {integrity: sha512-TH+BeeL6Ct98C7as35JbZLf8lgsRzlNJb5gklRIGHKaPkGl1esOKBc5ALUMd+q08Sr6tiEKM+Icbsxg5vuhMKQ==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/pluralize/-/pluralize-1.2.1.tgz}
-    dev: true
-
-  /pluralize/7.0.0:
-    resolution: {integrity: sha512-ARhBOdzS3e41FbkW/XWrTEtukqqLoK5+Z/4UeDaLuSW+39JPeFgs4gCGqsrJHVZX0fUrx//4OF0K1CUGwlIFow==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/pluralize/-/pluralize-7.0.0.tgz}
-    engines: {node: '>=4'}
     dev: true
 
   /pnp-webpack-plugin/1.7.0:
@@ -21038,18 +20720,8 @@ packages:
       aproba: 1.2.0
     dev: true
 
-  /rx-lite-aggregates/4.0.8:
-    resolution: {integrity: sha512-3xPNZGW93oCjiO7PtKxRK6iOVYBWBvtf9QHDfU23Oc+dLIQmAV//UnyXV/yihv81VS/UqoQPk4NegS8EFi55Hg==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/rx-lite-aggregates/-/rx-lite-aggregates-4.0.8.tgz}
-    dependencies:
-      rx-lite: 4.0.8
-    dev: true
-
   /rx-lite/3.1.2:
     resolution: {integrity: sha512-1I1+G2gteLB8Tkt8YI1sJvSIfa0lWuRtC8GjvtyPBcLSF5jBCCJJqKrpER5JU5r6Bhe+i9/pK3VMuUcXu0kdwQ==, registry: https://registry.nlark.com/}
-    dev: true
-
-  /rx-lite/4.0.8:
-    resolution: {integrity: sha512-Cun9QucwK6MIrp3mry/Y7hqD1oFqTYLQ4pGxaHTjIdaFDWRGGLikqp6u8LcWJnzpoALg9hap+JGk8sFIUuEGNA==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/rx-lite/-/rx-lite-4.0.8.tgz}
     dev: true
 
   /rxjs/6.6.7:
@@ -21379,7 +21051,7 @@ packages:
     dev: true
 
   /setprototypeof/1.1.0:
-    resolution: {integrity: sha1-0L2FU2iHtv58DYGMuWLZ2RxU5lY=, registry: https://registry.nlark.com/, tarball: setprototypeof/download/setprototypeof-1.1.0.tgz}
+    resolution: {integrity: sha1-0L2FU2iHtv58DYGMuWLZ2RxU5lY=, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/setprototypeof/download/setprototypeof-1.1.0.tgz}
     dev: true
 
   /setprototypeof/1.2.0:
@@ -21520,13 +21192,6 @@ packages:
   /slice-ansi/0.0.4:
     resolution: {integrity: sha512-up04hB2hR92PgjpyU3y/eg91yIBILyjVY26NvvciY3EVVPjybkMszMpXQ9QAkcS3I5rtJBDLoTxxg+qvW8c7rw==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/slice-ansi/-/slice-ansi-0.0.4.tgz}
     engines: {node: '>=0.10.0'}
-    dev: true
-
-  /slice-ansi/1.0.0:
-    resolution: {integrity: sha512-POqxBK6Lb3q6s047D/XsDVNPnF9Dl8JSaqe9h9lURl0OdNqy/ujDrOiIHtsqXMGbWWTIomRzAMaTyawAU//Reg==}
-    engines: {node: '>=4'}
-    dependencies:
-      is-fullwidth-code-point: 2.0.0
     dev: true
 
   /slice-ansi/2.1.0:
@@ -22109,7 +21774,7 @@ packages:
     dev: true
 
   /stackframe/1.3.4:
-    resolution: {integrity: sha512-oeVtt7eWQS+Na6F//S4kJ2K2VbRlS9D43mAlMyVpVWovy9o+jfgH8O9agzANzaiLjclA0oYzUXEM4PurhSUChw==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-oeVtt7eWQS+Na6F//S4kJ2K2VbRlS9D43mAlMyVpVWovy9o+jfgH8O9agzANzaiLjclA0oYzUXEM4PurhSUChw==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/stackframe/-/stackframe-1.3.4.tgz}
     dev: true
 
   /static-extend/0.1.2:
@@ -22398,7 +22063,7 @@ packages:
     dev: true
 
   /strip-indent/2.0.0:
-    resolution: {integrity: sha512-RsSNPLpq6YUL7QYy44RnPVTn/lcVZtb48Uof3X5JLbF4zD/Gs7ZFDv2HWol+leoQN2mT86LAzSshGfkTlSOpsA==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-RsSNPLpq6YUL7QYy44RnPVTn/lcVZtb48Uof3X5JLbF4zD/Gs7ZFDv2HWol+leoQN2mT86LAzSshGfkTlSOpsA==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/strip-indent/-/strip-indent-2.0.0.tgz}
     engines: {node: '>=4'}
     dev: true
 
@@ -22630,17 +22295,6 @@ packages:
       string-width: 2.1.1
     dev: true
 
-  /table/4.0.2:
-    resolution: {integrity: sha512-UUkEAPdSGxtRpiV9ozJ5cMTtYiqz7Ni1OGqLXRCynrvzdtR1p+cfOWe2RJLwvUG8hNanaSRjecIqwOjqeatDsA==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/table/-/table-4.0.2.tgz}
-    dependencies:
-      ajv: 5.5.2
-      ajv-keywords: 2.1.1_ajv@5.5.2
-      chalk: 2.4.2
-      lodash: 4.17.21
-      slice-ansi: 1.0.0
-      string-width: 2.1.1
-    dev: true
-
   /table/5.4.6:
     resolution: {integrity: sha512-wmEc8m4fjnob4gt5riFRtTu/6+4rSe12TpAELNSqHMfF3IqnA+CH37USM6/YR3qRZv7e56kAEAtd6nKZaxe0Ug==}
     engines: {node: '>=6.0.0'}
@@ -22762,7 +22416,7 @@ packages:
       serialize-javascript: 4.0.0
       source-map: 0.6.1
       terser: 4.8.1
-      webpack: 4.46.0_webpack-cli@3.3.12
+      webpack: 4.46.0
       webpack-sources: 1.4.3
       worker-farm: 1.7.0
     dev: true
@@ -22809,7 +22463,7 @@ packages:
       loader-runner: 2.4.0
       loader-utils: 1.4.0
       neo-async: 2.6.2
-      webpack: 4.46.0_webpack-cli@3.3.12
+      webpack: 4.46.0
     dev: true
 
   /through/2.3.8:
@@ -22849,7 +22503,7 @@ packages:
     optional: true
 
   /thunky/1.1.0:
-    resolution: {integrity: sha512-eHY7nBftgThBqOyHGVN+l8gF0BucP09fMo0oO/Lb0w1OF80dJv+lDVpXG60WMQvkcxAkNybKsrEIE3ZtKGmPrA==, registry: https://registry.nlark.com/}
+    resolution: {integrity: sha512-eHY7nBftgThBqOyHGVN+l8gF0BucP09fMo0oO/Lb0w1OF80dJv+lDVpXG60WMQvkcxAkNybKsrEIE3ZtKGmPrA==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/thunky/-/thunky-1.1.0.tgz}
     dev: true
 
   /tildify/1.2.0:
@@ -23842,32 +23496,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /vscode-json-languageservice/3.11.0:
-    resolution: {integrity: sha512-QxI+qV97uD7HHOCjh3MrM1TfbdwmTXrMckri5Tus1/FQiG3baDZb2C9Y0y8QThs7PwHYBIQXcAc59ZveCRZKPA==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/vscode-json-languageservice/-/vscode-json-languageservice-3.11.0.tgz}
-    dependencies:
-      jsonc-parser: 3.0.0
-      vscode-languageserver-textdocument: 1.0.5
-      vscode-languageserver-types: 3.16.0-next.2
-      vscode-nls: 5.0.1
-      vscode-uri: 2.1.2
-    dev: true
-
-  /vscode-languageserver-textdocument/1.0.5:
-    resolution: {integrity: sha512-1ah7zyQjKBudnMiHbZmxz5bYNM9KKZYz+5VQLj+yr8l+9w3g+WAhCkUkWbhMEdC5u0ub4Ndiye/fDyS8ghIKQg==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/vscode-languageserver-textdocument/-/vscode-languageserver-textdocument-1.0.5.tgz}
-    dev: true
-
-  /vscode-languageserver-types/3.16.0-next.2:
-    resolution: {integrity: sha512-QjXB7CKIfFzKbiCJC4OWC8xUncLsxo19FzGVp/ADFvvi87PlmBSCAtZI5xwGjF5qE0xkLf0jjKUn3DzmpDP52Q==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/vscode-languageserver-types/-/vscode-languageserver-types-3.16.0-next.2.tgz}
-    dev: true
-
-  /vscode-nls/5.0.1:
-    resolution: {integrity: sha512-hHQV6iig+M21lTdItKPkJAaWrxALQb/nqpVffakO4knJOh3DrU2SXOMzUzNgo1eADPzu3qSsJY1weCzvR52q9A==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/vscode-nls/-/vscode-nls-5.0.1.tgz}
-    dev: true
-
-  /vscode-uri/2.1.2:
-    resolution: {integrity: sha512-8TEXQxlldWAuIODdukIb+TR5s+9Ds40eSJrw+1iDDA9IFORPjMELarNQE3myz5XIkWWpdprmJjm1/SxMlWOC8A==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/vscode-uri/-/vscode-uri-2.1.2.tgz}
-    dev: true
-
   /vue-codemod/0.0.5:
     resolution: {integrity: sha512-DE+24W1d3oanGqq7yna4ddOKXmVzjECgku2ddMcm7OS9Bp9QOblMHT88PzKiCc7npGiHf5+mTfrEW1JVIBbA2A==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/vue-codemod/-/vue-codemod-0.0.5.tgz}
     engines: {node: '>= 10.0'}
@@ -23886,23 +23514,6 @@ packages:
       lru-cache: 6.0.0
       source-map: 0.6.1
       yargs: 16.2.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /vue-eslint-parser/2.0.3_eslint@4.18.2:
-    resolution: {integrity: sha512-ZezcU71Owm84xVF6gfurBQUGg8WQ+WZGxgDEQu1IHFBZNx7BFZg3L1yHxrCBNNwbwFtE1GuvfJKMtb6Xuwc/Bw==, registry: https://registry.nlark.com/, tarball: https://registry.nlark.com/vue-eslint-parser/-/vue-eslint-parser-2.0.3.tgz}
-    engines: {node: '>=4'}
-    peerDependencies:
-      eslint: '>=3.9.0'
-    dependencies:
-      debug: 3.2.7
-      eslint: 4.18.2
-      eslint-scope: 3.7.3
-      eslint-visitor-keys: 1.3.0
-      espree: 3.5.4
-      esquery: 1.4.0
-      lodash: 4.17.21
     transitivePeerDependencies:
       - supports-color
     dev: true
