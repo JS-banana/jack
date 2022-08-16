@@ -1,0 +1,1 @@
+"use strict";function isPhoneNum(e){return/^(\+?0?86\-?)?1[3456789]\d{9}$/.test(e)}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=isPhoneNum;

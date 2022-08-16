@@ -8,8 +8,7 @@
   "sideEffects": false,
   "scripts": {
     "clean": "rimraf lib",
-    "prebuild": "pnpm clean",
-    "build": "node gulpfile.js"
+    "build": "pnpm run clean && gulp build --gulpfile ./gulpfile.js"
   },
   "files": [
     "dist",

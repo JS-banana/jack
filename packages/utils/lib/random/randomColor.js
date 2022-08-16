@@ -1,0 +1,1 @@
+"use strict";function randomColor(){return"#"+("00000"+(16777216*Math.random()<<0).toString(16)).slice(-6)}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=randomColor;

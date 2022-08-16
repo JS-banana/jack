@@ -1,0 +1,1 @@
+"use strict";function offset(e){for(var t={left:0,top:0};e;)t.left+=e.offsetLeft,t.top+=e.offsetTop,e=e.offsetParent;return t}Object.defineProperty(exports,"__esModule",{value:!0}),exports.offset=offset,exports.default=offset;

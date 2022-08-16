@@ -1,0 +1,1 @@
+"use strict";function isLeapYear(e){return 0==e%4&&(e%100!=0||e%400==0)}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=isLeapYear;

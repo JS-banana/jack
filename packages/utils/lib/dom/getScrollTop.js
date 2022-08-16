@@ -1,0 +1,1 @@
+"use strict";function getScrollTop(){return document.documentElement&&document.documentElement.scrollTop||document.body.scrollTop}Object.defineProperty(exports,"__esModule",{value:!0}),exports.getScrollTop=getScrollTop;

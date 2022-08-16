@@ -1,0 +1,1 @@
+"use strict";function randomNum(e,t){return e=Math.ceil(e),t=Math.floor(t),Math.floor(Math.random()*(t-e+1))+e}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=randomNum;

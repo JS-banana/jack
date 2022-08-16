@@ -1,0 +1,1 @@
+"use strict";function monthDays(e){var t=(e=new Date(e)).getFullYear(),e=e.getMonth()+1;return new Date(t,e,0).getDate()}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=monthDays;
