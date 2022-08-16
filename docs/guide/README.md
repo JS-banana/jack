@@ -1,5 +1,5 @@
 ---
-title: 使用指南
+title: 简单介绍
 ---
 
 ## 介绍
@@ -69,7 +69,7 @@ yarn add @ah-ailpha/pro-sqltiptree
 
    <script>
    import { Button } from '@an-ailpha/components'
-   import ComSqlTipTree from '@ah-ailpha/com-sqltiptree'
+   import ProSqlTipTree from '@ah-ailpha/pro-sqltiptree'
    export default {
      components: {
        AhButton: Button,

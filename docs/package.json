@@ -8,5 +8,10 @@
   "devDependencies": {
     "vuepress": "^1.9.7",
     "vuepress-plugin-demo-container": "^0.2.0"
+  },
+  "dependencies": {
+    "@ah-ailpha/components": "workspace:*",
+    "@ah-ailpha/pro-sqltiptree": "workspace:*",
+    "view-design": "workspace:*"
   }
 }
