@@ -1,9 +1,8 @@
 import VueRouter from 'vue-router'
 import Vue from 'vue'
 import Home from '../pages/home.vue'
-import BasicLayout from '../layout/layout.vue'
-// import BlankLayout from '../layout/router-view.vue'
-import AhButton from '../demos/button/index.vue'
+import BlankLayout from '../components/layout/blankLayout.vue'
+// import AhButton from '../demos/button/index.vue'
 
 Vue.use(VueRouter)
 
@@ -21,13 +20,13 @@ const routes = [
     path: '/components',
     name: 'ah-components',
     meta: { title: 'components' },
-    component: BasicLayout,
+    component: BlankLayout,
     children: [
       {
-        path: '/button',
+        path: 'button',
         name: 'ah-button',
         meta: { title: 'button 按钮' },
-        component: AhButton,
+        component: resolve => require(['../demos/button/index.vue'], resolve),
       },
     ],
   },
@@ -35,11 +34,11 @@ const routes = [
     path: '/pro-components',
     name: 'ah-pro-components',
     meta: { title: 'pro-components' },
-    component: BasicLayout,
+    component: BlankLayout,
     children: [
       {
-        path: `/pro-sqltiptree`,
-        name: `ah-pro-sqltiptree`,
+        path: 'pro-sqltiptree',
+        name: 'ah-pro-sqltiptree',
         meta: { title: 'sqltiptree 提示器' },
         component: () => import('../demos/pro-sqltiptree/index.vue'),
       },

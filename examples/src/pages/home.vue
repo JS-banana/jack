@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <Card>
+      <p>AnButton 组件</p>
       <ah-button>ah-button</ah-button>
     </Card>
     <Divider />

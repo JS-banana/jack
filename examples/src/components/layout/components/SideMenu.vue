@@ -15,7 +15,6 @@
 </template>
 
 <script>
-import { router } from '../../router/index'
 export default {
   name: 'LayoutMenu',
   data: () => ({
@@ -23,16 +22,16 @@ export default {
     menuList: [],
   }),
   mounted() {
-    console.log('router', router)
+    console.log('this.$router', this.$router)
     this.initMenu()
   },
   methods: {
     handleMenuClick(name) {
       console.log('name', name)
-      router.push(name)
+      this.$router.push(name)
     },
     initMenu() {
-      const routes = router.options.routes
+      const routes = this.$router.options.routes
       const menuList = []
       const formatMenu = (menu = []) => {
         menu
@@ -44,7 +43,7 @@ export default {
                 name: item.name,
                 children: item.children.map(route => {
                   return {
-                    path: item.path + route.path,
+                    path: item.path + '/' + route.path,
                     name: route.name,
                   }
                 }),

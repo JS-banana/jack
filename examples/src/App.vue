@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import BasicLayout from './layout/layout.vue'
+import BasicLayout from './components/layout/basicLayout.vue'
 export default {
   name: 'App',
   components: {

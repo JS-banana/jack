@@ -1,8 +1,13 @@
 <template>
   <div>
-    <Base />
-    <Disable />
-    <Ghost />
+    <h2>iview button组件</h2>
+    <Card>
+      <Base />
+      <br />
+      <Disable />
+      <br />
+      <Ghost />
+    </Card>
   </div>
 </template>
 
