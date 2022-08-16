@@ -14,11 +14,11 @@ title: 使用指南
 
 ::: tip
 
-因为涉及到保密性质，npm主要发布在内网环境，注意相关地址无误。
+因为涉及到保密性质，npm 主要发布在内网环境，注意相关地址无误。
 
 :::
 
-为了方便维护以及支持用户按需使用，各组件通过**Monorepo**多包管理的方式进行发布，普通组件统一发布在`@an-ailpha/components`名下，按需引入，高级组件独立发布为一个npm包`@ah-ailpha/pro-sqltiptree`。
+为了方便维护以及支持用户按需使用，各组件通过**Monorepo**多包管理的方式进行发布，普通组件统一发布在`@an-ailpha/components`名下，按需引入，高级组件独立发布为一个 npm 包`@ah-ailpha/pro-sqltiptree`。
 
 </br>
 
@@ -49,32 +49,32 @@ yarn add @ah-ailpha/pro-sqltiptree
 
 1. 入口统一引入注册，全局使用：
 
-    ```js
-    import { Button } from '@an-ailpha/components'
-    import ProSqlTipTree from '@ah-ailpha/pro-sqltiptree'
+   ```js
+   import { Button } from '@an-ailpha/components'
+   import ProSqlTipTree from '@ah-ailpha/pro-sqltiptree'
 
-    Vue.use(Button)
-    Vue.use(ProSqlTipTree)
-    ```
+   Vue.use(Button)
+   Vue.use(ProSqlTipTree)
+   ```
 
 2. 在任意组件中单独引入使用：
 
-    ```vue
-    <template>
-        <div>
-            <ah-button>按钮</ah-button>
-            <ProSqlTipTree></ProSqlTipTree>
-        </div>
-    </template>
+   ```vue
+   <template>
+     <div>
+       <ah-button>按钮</ah-button>
+       <ProSqlTipTree></ProSqlTipTree>
+     </div>
+   </template>
 
-    <script>
-    import { Button } from '@an-ailpha/components'
-    import ComSqlTipTree from '@ah-ailpha/com-sqltiptree'
-    export default {
-        components: {
-            AhButton: Button,
-            ProSqlTipTree
-        },
-    }
-    </script>
-    ```
+   <script>
+   import { Button } from '@an-ailpha/components'
+   import ComSqlTipTree from '@ah-ailpha/com-sqltiptree'
+   export default {
+     components: {
+       AhButton: Button,
+       ProSqlTipTree,
+     },
+   }
+   </script>
+   ```

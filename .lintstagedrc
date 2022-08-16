@@ -1,6 +1,7 @@
 {
   "*.{vue,js,ts,jsx,tsx,json}": "eslint --fix",
   "*.md": [
-    "markdownlint --fix"
+    "markdownlint --fix",
+    "prettier -w"
   ]
 }

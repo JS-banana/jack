@@ -29,7 +29,7 @@ sidebarDepth: 1
 import AhProSqlTipTree from '@an-ailpha/pro-sqltiptree'
 export default {
   components: {
-    AhProSqlTipTree
+    AhProSqlTipTree,
   },
 }
 </script>
@@ -40,7 +40,7 @@ export default {
 | 参数         | 说明           | 类型      | 默认值 |
 | ------------ | -------------- | --------- | ------ |
 | propsIsFlink | 是否模型或指标 | `Boolean` | false  |
-| propsDisable | 设置readonly   | `Boolean` | false  |
+| propsDisable | 设置 readonly  | `Boolean` | false  |
 
 ---
 

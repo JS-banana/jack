@@ -1,12 +1,12 @@
-# pnpm-monorepo方案研究
+# pnpm-monorepo 方案研究
 
 ## 介绍
 
-pnpm官方介绍（文档）：<https://pnpm.io/zh/motivation>
+pnpm 官方介绍（文档）：<https://pnpm.io/zh/motivation>
 
 如何使用？
 
-直接通过npm安装：`npm install -g pnpm`
+直接通过 npm 安装：`npm install -g pnpm`
 
 版本要求：
 
@@ -35,35 +35,36 @@ peerDependencies：
 
 **全局命令**
 
-- `--filter`：过滤，过滤允许您将命令限制于包的特定子集，一般用于 packages/* 下面的子项目。
+- `--filter`：过滤，过滤允许您将命令限制于包的特定子集，一般用于 packages/\* 下面的子项目。
 
-    ```sh
-    pnpm i dayjs -r --filter @jack/web
-    ```
+  ```sh
+  pnpm i dayjs -r --filter @jack/web
+  ```
 
 - `-C`：在 `<path>` 中启动 pnpm ，而不是当前的工作目录。
 
-    ```sh
-    # 运行项目下的 docs 目录中的 dev
-    pnpm run -C docs dev
-    ```
+  ```sh
+  # 运行项目下的 docs 目录中的 dev
+  pnpm run -C docs dev
+  ```
 
 - `-w`（`--workspace-root`）：在工作空间的根目录中启动 pnpm ，而不是当前的工作目录。
 
-    ```sh
-    # vue依赖作为全局安装在根目录中
-    pnpm i vue -w
-    # 开发依赖 -D
-    pnpm i eslint -Dw
-    ```
+  ```sh
+  # vue依赖作为全局安装在根目录中
+  pnpm i vue -w
+  # 开发依赖 -D
+  pnpm i eslint -Dw
+  ```
 
 **pnpm install**
 
-在 workspace内, pnpm install 下载项目所有依赖. 如果想禁用这个行为, 将 `recursive-install` 设置为 `false`。
+在 workspace 内, pnpm install 下载项目所有依赖. 如果想禁用这个行为, 将 `recursive-install` 设置为 `false`。
 
-`--shamefully-hoist`：创建一个扁平node_modules 目录结构, 类似于npm 或 yarn. 一般配置在`.npmrc`中。
+`--shamefully-hoist`：创建一个扁平 node_modules 目录结构, 类似于 npm 或 yarn. 一般配置在`.npmrc`中。
 
 - 安装依赖
+
   - `-w`：表示把包安装在 root 下，该包会放置在 `<root>/node_modules` 下
   - `-r`：安装在所有 packages 中（一般配合`--filter`指定项目目录）
 
@@ -74,21 +75,21 @@ peerDependencies：
     pnpm i dayjs -r --filter @jack/web
     ```
 
-    如vue这样多个子项目都需要使用的包，可以安装到全局。
+    如 vue 这样多个子项目都需要使用的包，可以安装到全局。
 
 **pnpm run**
 
-- `-r`：针对每个package.json script对象中执行对应的命令，没有匹配到则跳过。
-- `--parallel`：忽略并发，立即在所有匹配的软件包中运行一个给定的脚本，用于在许多 packages上长时间运行的进程，例如冗长的构建进程。
-- `--stream`：以起始package目录作为前缀，立即从子进程输出流。 这允许从不同的 package交替输出。
+- `-r`：针对每个 package.json script 对象中执行对应的命令，没有匹配到则跳过。
+- `--parallel`：忽略并发，立即在所有匹配的软件包中运行一个给定的脚本，用于在许多 packages 上长时间运行的进程，例如冗长的构建进程。
+- `--stream`：以起始 package 目录作为前缀，立即从子进程输出流。 这允许从不同的 package 交替输出。
 
-    ```sh
-    # 执行每个子项目的 clean 命令
-    # 清理 packages 下面所有子项目
-    pnpm run -r --parallel clean
-    ```
+  ```sh
+  # 执行每个子项目的 clean 命令
+  # 清理 packages 下面所有子项目
+  pnpm run -r --parallel clean
+  ```
 
-## 使用monorepo多包管理方案
+## 使用 monorepo 多包管理方案
 
 假设项目目录及相关包名称如下：
 
@@ -99,17 +100,17 @@ peerDependencies：
 │   └── web             // @jack/web
 ```
 
-当我们在web项目中安装 ui作为依赖时：
+当我们在 web 项目中安装 ui 作为依赖时：
 
 pnpm workspace 会自动管理软连接到指定项目，你只需关注开发即可
 
-package.json如下：
+package.json 如下：
 
 ```json
 {
   "dependencies": {
-    "@jack/ui": "workspace:^0.0.1",
-  },
+    "@jack/ui": "workspace:^0.0.1"
+  }
 }
 ```
 
@@ -118,8 +119,8 @@ package.json如下：
 ```json
 {
   "dependencies": {
-    "@jack/ui": "^0.0.1",
-  },
+    "@jack/ui": "^0.0.1"
+  }
 }
 ```
 
@@ -127,27 +128,27 @@ package.json如下：
 
 ## npm 发包
 
-> 在 npm publish之前你应该已经 npm login 登录过了~
+> 在 npm publish 之前你应该已经 npm login 登录过了~
 
 使用`changeset publish`时，会报`npm ERR! 402 Payment Required`错误
 
 原因：无法发布到私有包，当包名以`@your-name`开头时，`npm publish`会默认发布为私有包，但是 npm 的私有包需要付费
 
-402错误
+402 错误
 
 ```js
 npm ERR! code E402
 npm ERR! 402 Payment Required - PUT https://registry.npmjs.org/.... - You must sign up for private packages
 ```
 
-package.jsom配置
+package.jsom 配置
 
 ```json
 {
-    "publishConfig": {
-      "access": "public",
-      // "registry": "https://registry.npmjs.org/"
-    }
+  "publishConfig": {
+    "access": "public"
+    // "registry": "https://registry.npmjs.org/"
+  }
 }
 ```
 
