@@ -8,7 +8,6 @@
     <Card>
       <ah-proSqlTipTree />
     </Card>
-    <router-view />
   </div>
 </template>
 

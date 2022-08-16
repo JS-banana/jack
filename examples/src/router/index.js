@@ -15,6 +15,7 @@ const routes = [
     path: '/home',
     name: 'ah-home',
     component: Home,
+    meta: { title: '首页' },
   },
   {
     path: '/components',
@@ -22,12 +23,12 @@ const routes = [
     meta: { title: 'components' },
     component: BlankLayout,
     children: [
-      {
-        path: 'button',
-        name: 'ah-button',
-        meta: { title: 'button 按钮' },
-        component: resolve => require(['../demos/button/index.vue'], resolve),
-      },
+      // {
+      //   path: 'button',
+      //   name: 'ah-button',
+      //   meta: { title: 'button 按钮' },
+      //   component: resolve => require(['../demos/button/index.vue'], resolve),
+      // },
     ],
   },
   {
@@ -36,42 +37,41 @@ const routes = [
     meta: { title: 'pro-components' },
     component: BlankLayout,
     children: [
-      {
-        path: 'pro-sqltiptree',
-        name: 'ah-pro-sqltiptree',
-        meta: { title: 'sqltiptree 提示器' },
-        component: () => import('../demos/pro-sqltiptree/index.vue'),
-      },
+      // {
+      //   path: 'pro-sqltiptree',
+      //   name: 'ah-pro-sqltiptree',
+      //   meta: { title: 'sqltiptree 提示器' },
+      //   component: () => import('../demos/pro-sqltiptree/index.vue'),
+      // },
     ],
   },
 ]
 
-// function registerDemoRoute() {
-//   const files = require.context('../demos', true, /index\.vue$/)
+// 自动注册 demos 目录下的文件为路由
+function registerDemoRoute() {
+  const files = require.context('../demos', true, /index\.vue$/)
+  let proRoute = routes.find(n => n.name === 'ah-components')
 
-//   files.keys().forEach(key => {
-//     const name = key.match(/\/(.*)\/index\.vue$/)[1]
-//     const reqCom = files(key).default || files(key)
+  files.keys().forEach(key => {
+    const name = key.match(/\/(.*)\/index\.vue$/)[1]
+    const reqCom = files(key).default || files(key)
 
-//     if (name.startsWith('pro-')) {
-//       routes[2].children.push({
-//         path: `/${name}`,
-//         name: `ah-${name}`,
-//         meta: { title: name },
-//         component: reqCom,
-//       })
-//     } else {
-//       routes[1].children.push({
-//         path: `/${name}`,
-//         name: `ah-${name}`,
-//         meta: { title: name },
-//         component: reqCom,
-//       })
-//     }
-//   })
-// }
+    const route = {
+      path: `${name}`,
+      name: `ah-${name}`,
+      meta: { title: reqCom.title },
+      component: reqCom,
+    }
 
-// registerDemoRoute()
+    if (name.startsWith('pro-')) {
+      proRoute = routes.find(n => n.name === 'ah-pro-components')
+    }
+
+    if (proRoute) proRoute.children.push(route)
+  })
+}
+
+registerDemoRoute()
 
 export const router = new VueRouter({
   mode: 'hash',

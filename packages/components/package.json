@@ -9,6 +9,11 @@
     "vue": "^2.6.10"
   },
   "main": "./index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "pnpm clean",
+    "build": "webpack --config webpack.config.js"
+  },
   "files": [
     "dist",
     "lib",

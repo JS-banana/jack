@@ -3,13 +3,13 @@
     <template v-for="item in menuList">
       <Submenu v-if="item.children && item.children.length" :name="item.name" :key="item.name">
         <template #title>
-          <span>{{ item.name }}</span>
+          <span>{{ item?.meta?.title || item.name }}</span>
         </template>
         <MenuItem v-for="subItem in item.children" :name="subItem.path" :key="subItem.name">
-          {{ subItem.name }}
+          {{ subItem?.meta?.title || subItem.name }}
         </MenuItem>
       </Submenu>
-      <MenuItem v-else :name="item.path" :key="item.name">{{ item.name }}</MenuItem>
+      <MenuItem v-else :name="item.path" :key="item.name">{{ item?.meta?.title || item.name }}</MenuItem>
     </template>
   </Menu>
 </template>
@@ -17,12 +17,14 @@
 <script>
 export default {
   name: 'LayoutMenu',
-  data: () => ({
-    activeRoute: '/',
-    menuList: [],
-  }),
+  data: function () {
+    return {
+      activeRoute: this.$route.path || '/',
+      menuList: [],
+    }
+  },
   mounted() {
-    console.log('this.$router', this.$router)
+    console.log('this.$router', this.$route)
     this.initMenu()
   },
   methods: {
@@ -39,10 +41,12 @@ export default {
           .forEach(item => {
             if (item.children && item.children.length) {
               menuList.push({
+                ...item,
                 path: item.path,
                 name: item.name,
                 children: item.children.map(route => {
                   return {
+                    ...route,
                     path: item.path + '/' + route.path,
                     name: route.name,
                   }
@@ -50,6 +54,7 @@ export default {
               })
             } else {
               menuList.push({
+                ...item,
                 path: item.path,
                 name: item.name,
               })
