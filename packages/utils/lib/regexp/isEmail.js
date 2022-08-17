@@ -1,1 +1,0 @@
-"use strict";function isEmail(e){return/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/.test(e)}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=isEmail;

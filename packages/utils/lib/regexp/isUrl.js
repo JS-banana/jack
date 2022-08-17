@@ -1,1 +1,0 @@
-"use strict";function isUrl(e){return/[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/i.test(e)}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=isUrl;

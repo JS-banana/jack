@@ -1,1 +1,54 @@
-"use strict";import _Object$defineProperty from"babel-runtime/core-js/object/define-property";import _Object$keys from"babel-runtime/core-js/object/keys";Object.defineProperty(exports,"__esModule",{value:!0});var _getScrollTop=require("./dom/getScrollTop"),_offset=(_Object$keys(_getScrollTop).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _getScrollTop[e]}})}),require("./dom/offset")),_scrollTo=(_Object$keys(_offset).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _offset[e]}})}),require("./dom/scrollTo")),_setScrollTop=(_Object$keys(_scrollTo).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _scrollTo[e]}})}),require("./dom/setScrollTop")),_windowResize=(_Object$keys(_setScrollTop).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _setScrollTop[e]}})}),require("./dom/windowResize")),_deepClone=(_Object$keys(_windowResize).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _windowResize[e]}})}),require("./object/deepClone")),_isEmptyObject=(_Object$keys(_deepClone).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _deepClone[e]}})}),require("./object/isEmptyObject")),_randomColor=(_Object$keys(_isEmptyObject).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _isEmptyObject[e]}})}),require("./random/randomColor")),_randomNum=(_Object$keys(_randomColor).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _randomColor[e]}})}),require("./random/randomNum")),_isColor=(_Object$keys(_randomNum).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _randomNum[e]}})}),require("./regexp/isColor")),_isEmail=(_Object$keys(_isColor).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _isColor[e]}})}),require("./regexp/isEmail")),_isIdCard=(_Object$keys(_isEmail).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _isEmail[e]}})}),require("./regexp/isIdCard")),_isPhoneNum=(_Object$keys(_isIdCard).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _isIdCard[e]}})}),require("./regexp/isPhoneNum")),_isUrl=(_Object$keys(_isPhoneNum).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _isPhoneNum[e]}})}),require("./regexp/isUrl")),_digitUppercase=(_Object$keys(_isUrl).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _isUrl[e]}})}),require("./string/digitUppercase")),_formatPassTime=(_Object$keys(_digitUppercase).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _digitUppercase[e]}})}),require("./time/formatPassTime")),_formatRemainTime=(_Object$keys(_formatPassTime).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _formatPassTime[e]}})}),require("./time/formatRemainTime")),_isLeapYear=(_Object$keys(_formatRemainTime).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _formatRemainTime[e]}})}),require("./time/isLeapYear")),_isSameDay=(_Object$keys(_isLeapYear).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _isLeapYear[e]}})}),require("./time/isSameDay")),_monthDays=(_Object$keys(_isSameDay).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _isSameDay[e]}})}),require("./time/monthDays")),_timeLeft=(_Object$keys(_monthDays).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _monthDays[e]}})}),require("./time/timeLeft")),_parseQueryString=(_Object$keys(_timeLeft).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _timeLeft[e]}})}),require("./url/parseQueryString")),_stringfyQueryString=(_Object$keys(_parseQueryString).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _parseQueryString[e]}})}),require("./url/stringfyQueryString"));_Object$keys(_stringfyQueryString).forEach(function(e){"default"!==e&&"__esModule"!==e&&_Object$defineProperty(exports,e,{enumerable:!0,get:function(){return _stringfyQueryString[e]}})});
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+/**
+ * @desc   格式化${startTime}距现在的已过时间
+ * @param  {Date} startTime
+ * @return {String}
+ */
+function formatPassTime(startTime) {
+  var currentTime = Date.parse("" + new Date()),
+      time = currentTime - startTime,
+      day = parseInt((time / (1000 * 60 * 60 * 24)).toString()),
+      hour = parseInt((time / (1000 * 60 * 60)).toString()),
+      min = parseInt((time / (1000 * 60)).toString()),
+      month = parseInt((day / 30).toString()),
+      year = parseInt((month / 12).toString());
+  if (year) return year + '年前';
+  if (month) return month + '个月前';
+  if (day) return day + '天前';
+  if (hour) return hour + '小时前';
+  if (min) return min + '分钟前';else return '刚刚';
+}
+
+/**
+ *
+ * @desc   格式化现在距${endTime}的剩余时间
+ * @param  {Date} endTime
+ * @return {String}
+ */
+function formatRemainTime(endTime) {
+  var startDate = new Date(); //开始时间
+
+  var endDate = new Date(endTime); //结束时间
+
+  var t = endDate.getTime() - startDate.getTime(); //时间差
+
+  var d = 0,
+      h = 0,
+      m = 0,
+      s = 0;
+
+  if (t >= 0) {
+    d = Math.floor(t / 1000 / 3600 / 24);
+    h = Math.floor(t / 1000 / 60 / 60 % 24);
+    m = Math.floor(t / 1000 / 60 % 60);
+    s = Math.floor(t / 1000 % 60);
+  }
+
+  return d + '天 ' + h + '小时 ' + m + '分钟 ' + s + '秒';
+}
+
+exports.formatPassTime = formatPassTime;
+exports.formatRemainTime = formatRemainTime;

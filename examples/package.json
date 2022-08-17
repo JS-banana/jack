@@ -14,6 +14,7 @@
   "dependencies": {
     "@ah-ailpha/components": "workspace:*",
     "@ah-ailpha/pro-sqltiptree": "workspace:*",
+    "@ah-ailpha/utils": "workspace:*",
     "core-js": "^3.6.5",
     "view-design": "workspace:*",
     "vue": "^2.6.11"

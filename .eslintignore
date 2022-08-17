@@ -13,3 +13,8 @@
 /**/public
 packages/view-design
 examples
+
+packages/utils/lib
+packages/utils/es
+packages/utils/dist
+packages/utils/types

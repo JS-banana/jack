@@ -1,1 +1,0 @@
-"use strict";function setScrollTop(e){return window.scrollTo(0,e),e}Object.defineProperty(exports,"__esModule",{value:!0}),exports.setScrollTop=setScrollTop;

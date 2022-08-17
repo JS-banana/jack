@@ -1,1 +1,0 @@
-"use strict";function formatRemainTime(e){var t=new Date,e=new Date(e).getTime()-t.getTime(),t=0,o=0,r=0,a=0;return 0<=e&&(t=Math.floor(e/1e3/3600/24),o=Math.floor(e/1e3/60/60%24),r=Math.floor(e/1e3/60%60),a=Math.floor(e/1e3%60)),t+"天 "+o+"小时 "+r+"分钟 "+a+"秒"}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=formatRemainTime;

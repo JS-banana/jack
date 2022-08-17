@@ -1,18 +1,27 @@
 <template>
   <div class="hello">
-    <Card>
-      <p>AnButton 组件</p>
+    <Card title="@ah-ailpha/components 组件测试之 AnButton">
       <ah-button>ah-button</ah-button>
     </Card>
     <Divider />
-    <Card>
+    <Card title="@ah-ailpha/pro-sqltiptree 组件测试">
       <ah-proSqlTipTree />
+    </Card>
+    <Divider />
+    <Card title="@ah-ailpha/utils 工具库测试">
+      <p>{{ passTime }}距现在的已过时间：{{ pass }}</p>
+      <p>现在距{{ remainTime }}的剩余时间：{{ remain }}</p>
     </Card>
   </div>
 </template>
 
 <script>
 import AhProSqlTipTree from '@ah-ailpha/pro-sqltiptree'
+import { formatPassTime, formatRemainTime } from '@ah-ailpha/utils'
+
+const passTime = '2022-08-15'
+const remainTime = '2022-09-10'
+
 export default {
   name: 'HelloWorld',
   props: {
@@ -20,6 +29,14 @@ export default {
   },
   components: {
     AhProSqlTipTree,
+  },
+  data() {
+    return {
+      passTime,
+      remainTime,
+      pass: formatPassTime(Date.parse(new Date(passTime))),
+      remain: formatRemainTime(remainTime),
+    }
   },
 }
 </script>

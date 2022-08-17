@@ -7,3 +7,8 @@
 /**/assets
 /**/public
 packages/view-design
+
+packages/utils/lib
+packages/utils/es
+packages/utils/dist
+packages/utils/types

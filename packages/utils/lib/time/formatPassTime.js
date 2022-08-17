@@ -1,1 +1,0 @@
-"use strict";function formatPassTime(e){var e=Date.parse(new Date)-e,t=parseInt(e/864e5),r=parseInt(e/36e5),e=parseInt(e/6e4),a=parseInt(t/30),s=parseInt(a/12);return s?s+"年前":a?a+"个月前":t?t+"天前":r?r+"小时前":e?e+"分钟前":"刚刚"}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=formatPassTime;
