@@ -5,6 +5,7 @@ import iView from 'view-design'
 import 'view-design/dist/styles/iview.css'
 import Ahcomponents from '@ah-ailpha/components'
 import './styles/index.less'
+import './utils'
 
 Vue.config.productionTip = false
 

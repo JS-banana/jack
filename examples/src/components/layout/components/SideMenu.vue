@@ -24,7 +24,6 @@ export default {
     }
   },
   mounted() {
-    console.log('this.$router', this.$route)
     this.initMenu()
   },
   methods: {
@@ -63,7 +62,6 @@ export default {
       }
       formatMenu(routes)
       this.menuList = menuList
-      console.log('menuList', menuList)
     },
   },
 }

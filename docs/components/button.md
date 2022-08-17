@@ -8,34 +8,8 @@ sidebarDepth: 1
 
 ```html
 <template>
-  <button>Default</button>
-  <button type="primary">Primary</button>
-  <button type="dashed">Dashed</button>
-  <button type="text">Text</button>
-  <button type="info">Info</button>
-  <button type="success">Success</button>
-  <button type="warning">Warning</button>
-  <button type="error">Error</button>
-</template>
-```
-
-:::
-
-## 不可用状态
-
-::: demo
-
-```vue
-<template>
-  <Button>Default</Button>
-  <Button type="primary">Primary</Button>
-  <Button type="dashed">Dashed</Button>
-  <Button type="text">Text</Button>
-  <br /><br />
-  <Button disabled>Default(Disabled)</Button>
-  <Button type="primary" disabled>Primary(Disabled)</Button>
-  <Button type="dashed" disabled>Dashed(Disabled)</Button>
-  <Button type="text" disabled>Text(Disabled)</Button>
+  <ah-button>Default</ah-button>
+  <ah-button type="success">Default</ah-button>
 </template>
 ```
 
@@ -51,27 +25,10 @@ sidebarDepth: 1
     <RadioGroup v-model="buttonSize" type="button">
       <Radio label="large">Large</Radio>
       <Radio label="default">Default</Radio>
-      <Radio label="small">small</Radio>
     </RadioGroup>
     <br /><br />
-    <Button :size="buttonSize" type="primary">Primary</Button>
-    <Button :size="buttonSize" type="default">Default</Button>
-    <Button :size="buttonSize" type="dashed">Dashed</Button>
-    <Button :size="buttonSize" type="text">Text</Button>
-    <br /><br />
-    <Button :size="buttonSize" icon="ios-download-outline" type="primary" shape="circle"></Button>
-    <Button :size="buttonSize" icon="ios-download-outline" type="primary">Download</Button>
-    <br /><br />
-    <ButtonGroup :size="buttonSize">
-      <Button :size="buttonSize" type="primary">
-        <Icon type="ios-arrow-back" />
-        Backward
-      </Button>
-      <Button :size="buttonSize" type="primary">
-        Forward
-        <Icon type="ios-arrow-forward" />
-      </Button>
-    </ButtonGroup>
+    <ah-button :size="buttonSize" type="default">Default</ah-button>
+    <ah-button :size="buttonSize" type="success">success</ah-button>
   </div>
 </template>
 <script>
@@ -83,20 +40,6 @@ export default {
   },
 }
 </script>
-```
-
-:::
-
-## 测试
-
-自定义的基础组件
-
-::: demo
-
-```vue
-<template>
-  <ah-button>Default</ah-button>
-</template>
 ```
 
 :::

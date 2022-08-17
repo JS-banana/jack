@@ -15,4 +15,9 @@ module.exports = [
     text: '高级组件',
     link: '/pro-components/proSqlTipTree',
   },
+  {
+    text: '工具函数',
+    link: '/ah-utils/',
+  },
+  { text: '仓库', link: 'https://www.npmjs.com/package/@ah-ailpha/utils' },
 ]

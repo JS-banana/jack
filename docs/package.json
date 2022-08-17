@@ -2,7 +2,7 @@
   "name": "docs",
   "private": true,
   "scripts": {
-    "dev": "vuepress dev",
+    "dev": "vuepress dev --port 8090",
     "build": "vuepress build"
   },
   "devDependencies": {
