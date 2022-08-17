@@ -3,7 +3,7 @@
  * @param  {Date} startTime
  * @return {String}
  */
-export function formatPassTime(startTime: Date | any) {
+export function formatPassTime(startTime: Date | any): string {
   const currentTime = Date.parse(`${new Date()}`),
     time = currentTime - startTime,
     day = parseInt((time / (1000 * 60 * 60 * 24)).toString()),

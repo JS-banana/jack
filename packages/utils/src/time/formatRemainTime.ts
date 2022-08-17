@@ -4,7 +4,7 @@
  * @param  {Date} endTime
  * @return {String}
  */
-export function formatRemainTime(endTime: Date) {
+export function formatRemainTime(endTime: Date): string {
   const startDate = new Date() //开始时间
   const endDate = new Date(endTime) //结束时间
   const t = endDate.getTime() - startDate.getTime() //时间差

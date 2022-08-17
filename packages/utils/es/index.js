@@ -1,7 +1,3 @@
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
 /**
  *
  * @desc 获取滚动条距顶部的距离
@@ -460,26 +456,4 @@ function stringfyQueryString(obj) {
   return pairs.join('&');
 }
 
-exports.deepClone = deepClone;
-exports.digitUppercase = digitUppercase;
-exports.formatPassTime = formatPassTime;
-exports.formatRemainTime = formatRemainTime;
-exports.getMonthDays = getMonthDays;
-exports.getOffset = getOffset;
-exports.getScrollTop = getScrollTop;
-exports.getTimeLeft = getTimeLeft;
-exports.isColor = isColor;
-exports.isEmail = isEmail;
-exports.isEmptyObject = isEmptyObject;
-exports.isIdCard = isIdCard;
-exports.isLeapYear = isLeapYear;
-exports.isPhoneNum = isPhoneNum;
-exports.isSameDay = isSameDay;
-exports.isUrl = isUrl;
-exports.parseQueryString = parseQueryString;
-exports.randomColor = randomColor;
-exports.randomNum = randomNum;
-exports.setScrollTo = setScrollTo;
-exports.setScrollTop = setScrollTop;
-exports.stringfyQueryString = stringfyQueryString;
-exports.windowResize = windowResize;
+export { deepClone, digitUppercase, formatPassTime, formatRemainTime, getMonthDays, getOffset, getScrollTop, getTimeLeft, isColor, isEmail, isEmptyObject, isIdCard, isLeapYear, isPhoneNum, isSameDay, isUrl, parseQueryString, randomColor, randomNum, setScrollTo, setScrollTop, stringfyQueryString, windowResize };
