@@ -18,7 +18,7 @@ module.exports = merge(webpackBaseConfig, {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'components.min.js',
+    filename: 'index.min.js',
     library: 'components',
     libraryTarget: 'umd',
     umdNamedDefine: true,

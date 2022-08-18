@@ -1,10 +1,9 @@
 {
   "name": "@ah-ailpha/pro-sqltiptree",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "@ah-ailpha components pro-sqltiptree",
-  "main": "index.js",
-  "module": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.min.js",
+  "typings": "types/index.d.ts",
   "sideEffects": false,
   "peerDependencies": {
     "view-design": "^4.3.2",
@@ -12,8 +11,7 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "prebuild": "pnpm clean",
-    "build": "webpack --config webpack.config.js"
+    "build": "pnpm run clean && webpack --config webpack.config.js"
   },
   "files": [
     "dist",
