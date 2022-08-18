@@ -6,7 +6,8 @@
 /**/.DS_Store
 /**/node_modules/
 /**/.env
-/**/dist
+# /**/dist
+docs/**/dist
 
 # Logs
 /**/yarn-error.log
