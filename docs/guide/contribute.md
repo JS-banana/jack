@@ -22,6 +22,8 @@ nrm use taobao
 
 ### 安装依赖
 
+下面列出的所有命令，你都应该确保是在项目根目录下执行的（不要进入某个具体的子项目操作，一切都在全局目录下进行）。
+
 1. 安装依赖
 
    ```sh
@@ -31,7 +33,7 @@ nrm use taobao
 
    ```sh
    # 安装到全局 -w
-   pnpm add -Dw <package-name>
+   pnpm add <package-name> -Dw
    ```
 
 2. 安装到指定子项目中
@@ -44,12 +46,6 @@ nrm use taobao
    pnpm add dayjs --filter @ah-ailpha/package-a
    ```
 
-   或者你也可以单独进入到需要的工作区安装依赖（不建议此方式）
-
-   ```sh
-   cd package-a && pnpm i xx -D
-   ```
-
    在安装完内部依赖后，需要在根目录下执行一次 pnpm install，构建依赖包链接关系
 
 3. 创建或进入子项目中进行开发
@@ -59,23 +55,25 @@ nrm use taobao
 
 4. 确定包版本
 
-   - 本项目包版本和 CHANGELOG 日志由 changeset 控制，你只需要执行以下脚本即可，在开始之前你应该已经了解了[semver 规范](https://semver.org/lang/zh-CN/spec/v2.0.0.html)
+   - 本项目包版本 version 和 CHANGELOG 日志由 changeset 控制，你只需要执行以下脚本即可，在开始之前你应该已经了解了[semver 规范](https://semver.org/lang/zh-CN/spec/v2.0.0.html)
    - 执行以下命令后会出现交互式 CLI，请选择自己的子项目，并根据自己的子项目确定版本更新
 
    ```sh
    # 1. 预构建选择版本
-   pnpm run changeset
+   pnpm run preversion
    # 2. 确定版本
    pnpm run version
    ```
 
 5. 发布包到 npm
 
-   该脚本命令一律要求在项目根目录下执行，如果只涉及自己负责的子项目，可以选择第二种方式
+   如果你未改动涉及到源码文件的部分，则可以选择第二种方式，减少非必要的 build 构建，直接发布更新即可。
 
    ```sh
    # 先构建项目再发布包
    pnpm run release
+   # 不构建build，直接发布包
+   pnpm run release:nobuild
    ```
 
 ### 开发调试

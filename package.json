@@ -98,6 +98,7 @@
     "vue-template-compiler": "^2.6.12",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "4.x",
     "webpack-merge": "^4.2.1"
   },
   "publishConfig": {

@@ -20,8 +20,7 @@
 </template>
 
 <script>
-import AhProSqlTipTree from '@ah-ailpha/pro-sqltiptree'
-import { formatPassTime, formatRemainTime, randomColor } from '@ah-ailpha/utils'
+import { formatPassTime, formatRemainTime, randomColor } from '../utils/index'
 
 const passTime = '2022-08-15'
 const remainTime = '2022-09-10'
@@ -30,9 +29,6 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String,
-  },
-  components: {
-    AhProSqlTipTree,
   },
   data() {
     return {

@@ -5,10 +5,11 @@
   "description": "",
   "author": "",
   "scripts": {
-    "dev": "npm run serve",
+    "dev": "pnpm run serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    ":webpack:dev": "webpack-dev-server --open --inline --hot --compress --history-api-fallback --port 8081 --config ./webpack.dev.config.js"
   },
   "main": "index.js",
   "dependencies": {

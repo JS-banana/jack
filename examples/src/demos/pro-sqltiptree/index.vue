@@ -5,15 +5,8 @@
   </div>
 </template>
 <script>
-import AhProSqlTipTree from '@ah-ailpha/pro-sqltiptree'
 export default {
-  name: 'Demo-AhProSqlTipTree',
+  name: 'DemoAhProSqlTipTree',
   title: 'SqlTipTree 提示器',
-  props: {
-    msg: String,
-  },
-  components: {
-    AhProSqlTipTree,
-  },
 }
 </script>

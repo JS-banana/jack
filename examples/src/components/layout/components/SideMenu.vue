@@ -1,15 +1,15 @@
 <template>
   <Menu class="menu-container" :active-name="activeRoute" @on-select="handleMenuClick">
     <template v-for="item in menuList">
-      <Submenu v-if="item.children && item.children.length" :name="item.name" :key="item.name">
+      <Submenu v-if="item.children && item.children.length" :key="item.name" :name="item.name">
         <template #title>
           <span>{{ item?.meta?.title || item.name }}</span>
         </template>
-        <MenuItem v-for="subItem in item.children" :name="subItem.path" :key="subItem.name">
+        <MenuItem v-for="subItem in item.children" :key="subItem.name" :name="subItem.path">
           {{ subItem?.meta?.title || subItem.name }}
         </MenuItem>
       </Submenu>
-      <MenuItem v-else :name="item.path" :key="item.name">{{ item?.meta?.title || item.name }}</MenuItem>
+      <MenuItem v-else :key="item.name" :name="item.path">{{ item?.meta?.title || item.name }}</MenuItem>
     </template>
   </Menu>
 </template>

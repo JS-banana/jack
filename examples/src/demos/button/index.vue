@@ -16,7 +16,7 @@ import Base from './base.vue'
 import Disable from './disabled.vue'
 import Ghost from './ghost.vue'
 export default {
-  name: 'Demo-AhButton',
+  name: 'DemoAhButton',
   title: 'Button 按钮',
   components: {
     Base,
