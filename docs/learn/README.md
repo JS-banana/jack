@@ -9,9 +9,9 @@ title: monorepo相关技术栈的学习分享
 首先，根据本项目实战涉及到的技术点，以及分享学习的技术点如下：
 
 - yarm/pnpm workspace 工作空间概念
-- pnpm 工具的使用及其在 monorepo 场景下的使用
+- [pnpm 工具的使用及其在 monorepo 场景下的使用](pnpm-monorepo.md)
 - monorepo 多包管理方案的理解
-- lernaJS 多包管理工具的使用(本项目未采纳)
+- [lernaJS 多包管理工具的使用(本项目未采纳)](lerna.md)
 - [changeset 版本管理工具的使用](changeset.md)
 - webpack 组件类发包学习使用
 - rollup 工具类发包学习使用

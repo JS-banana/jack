@@ -79,7 +79,7 @@ import { randomColor } from '@ah-ailpha/utils' // 工具类推荐按需加载使
 
 1. 组件类的开发、构建打包使用 JavaScript + Vue + Webpack
 2. 工具类的开发、构建打包使用 TypeScript + Rollup
-3. 文档网站当前方案使用的是 vuepress
+3. 文档网站当前方案使用的是 vuepress（基于 vue2、webpack）
 
 package.json 相关脚本命令如下：
 
