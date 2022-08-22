@@ -10,6 +10,6 @@ echo "🎉🎉🎉end lint-staged ==============================="
 echo "🎃🎃🎃start pretty-quick ==============================="
 
 # pnpm run lint:fix
-npx pretty-quick --staged
+# npx pretty-quick --staged
 
 echo "🎉🎉🎉end pretty-quick ==============================="
