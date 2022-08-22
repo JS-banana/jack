@@ -13,5 +13,8 @@
     "@ah-ailpha/components": "workspace:*",
     "@ah-ailpha/pro-sqltiptree": "workspace:*",
     "view-design": "workspace:*"
+  },
+  "resolutions": {
+    "webpack-hot-middleware": "2.25.0"
   }
 }
