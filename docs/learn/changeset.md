@@ -1,5 +1,7 @@
 # changeset 基础使用
 
+Changesets 是一个用于 Monorepo 项目下版本以及 Changelog 文件管理的工具
+
 1. changeset init
 
    - 新项目执行该命令，完成对项目的初始化

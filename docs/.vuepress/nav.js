@@ -19,5 +19,9 @@ module.exports = [
     text: '工具函数',
     link: '/ah-utils/',
   },
+  {
+    text: '知识拓展',
+    link: '/learn/',
+  },
   { text: '仓库', link: 'https://www.npmjs.com/package/@ah-ailpha/utils' },
 ]

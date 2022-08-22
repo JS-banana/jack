@@ -22,12 +22,14 @@
 你可以分别在不同目录下查看
 
 ```js
-;-dist - es - lib
+├── dist  // umd
+├── es    // ES Module
+├── lib   // ConmonJs
 ```
 
 ## 使用
 
-首先，进行 npm 安装
+非常简单，直接通过 npm 安装即可开始使用
 
 ```sh
 pnpm i @ah-ailpha/utils

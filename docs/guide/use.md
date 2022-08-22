@@ -4,7 +4,7 @@ title: 如何使用
 
 ## 如何使用
 
-在使用方式上应该和使用 npm 包一样
+在使用方式上和使用 npm 包一样
 
 ### 安装
 
@@ -13,6 +13,8 @@ title: 如何使用
 npm i --save @ah-ailpha/components
 # 高级组件
 npm i --save @ah-ailpha/pro-sqltiptree
+# 工具类
+npm i --save @ah-ailpha/utils
 ```
 
 ### 注册
@@ -44,9 +46,10 @@ app.use(Button)
   <ah-proSqlTipTree>AhProSqlTipTree组件</ah-proSqlTipTree>
 </template>
 <script>
-  import { Button } from 'ant-design-vue'
+  import { Button } from '@ah-ailpha/components'
   import ProSqlTipTree from '@ah-ailpha/pro-sqltiptree'
   // import AhProSqlTipTree from '@ah-ailpha/pro-sqltiptree'
+  import { randomColor } from '@ah-ailpha/utils' // 工具类推荐按需加载使用
 
   export default {
     components: {

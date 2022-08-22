@@ -8,4 +8,6 @@ module.exports = {
   ],
   '/components/': [['button', 'Button 按钮']],
   '/pro-components/': [['proSqlTipTree', 'ProSqlTipTree 提示器']],
+  '/ah-utils/': ['', 'dom', 'object'],
+  '/learn/': ['', 'changeset'],
 }

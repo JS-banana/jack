@@ -4,7 +4,9 @@ title: 参与开发
 
 ## 如何参与开发
 
-本项目采用 monorepo 方案，使用 pnpm workspaces + changeset 管理，在开发之前，你需要先安装 [pnpm](https://pnpm.io/installation)。
+本项目采用 monorepo 方案，使用 pnpm workspaces + changeset 管理，在开发之前，你需要先安装 [pnpm 官方文档](https://pnpm.io/installation)。
+
+pnpm 包管理器的相关分析见[包管理工具 pnpm 分析](https://www.yuque.com/docs/share/07d7ca77-290e-43bc-a2ec-6421ea44b822)
 
 ```sh
 npm install -g pnpm
@@ -18,6 +20,20 @@ npm i nrm -g
 nrm ls
 # 使用源
 nrm use taobao
+```
+
+如何高效的使用 pnpm，需要了解几个常用的基本命令：
+
+- `--filter`：过滤，过滤允许您将命令限制于包的特定子集，一般用于 packages/\* 下面的子项目（如构建 packages 目录下的所有子项目 `pnpm run --filter \"./packages/**\" -r --parallel build`）。
+- `-C`：在 `<path>` 中启动 pnpm ，而不是当前的工作目录（如启动 examples 子项目的 serve 命令 `pnpm run -C examples serve`）。
+- `-r`：对所有子项目执行命令（如执行每个子项目的 clean 命令 `pnpm run -r clean`）
+- `-w`：表示把包安装在 root 下，该包会放置在 `<root>/node_modules` 下，所有子项目都可以直接引入使用（如 vue、vue-router、lodash 等多个子项目都需要使用的依赖，推荐安装在根目录下）
+- `--parallel`：忽略并发，立即在所有匹配的软件包中运行一个给定的脚本，用于在许多 packages 上长时间运行的进程，例如冗长的构建进程。
+
+### 克隆本项目
+
+```sh
+git clone git@github.com:JS-banana/jack.git
 ```
 
 ### 安装依赖
@@ -46,7 +62,7 @@ nrm use taobao
    pnpm add dayjs --filter @ah-ailpha/package-a
    ```
 
-   在安装完内部依赖后，需要在根目录下执行一次 pnpm install，构建依赖包链接关系
+   在安装完内部依赖后，需要在根目录下执行一次 `pnpm install`，构建依赖包链接关系
 
 3. 创建或进入子项目中进行开发
 
@@ -55,7 +71,7 @@ nrm use taobao
 
 4. 确定包版本
 
-   - 本项目包版本 version 和 CHANGELOG 日志由 changeset 控制，你只需要执行以下脚本即可，在开始之前你应该已经了解了[semver 规范](https://semver.org/lang/zh-CN/spec/v2.0.0.html)
+   - 本项目包版本 `version` 和 `CHANGELOG` 日志由 **changeset** 控制，你只需要执行以下脚本即可，在开始之前你应该已经了解了[semver 规范](https://semver.org/lang/zh-CN/spec/v2.0.0.html)
    - 执行以下命令后会出现交互式 CLI，请选择自己的子项目，并根据自己的子项目确定版本更新
 
    ```sh
@@ -67,7 +83,7 @@ nrm use taobao
 
 5. 发布包到 npm
 
-   如果你未改动涉及到源码文件的部分，则可以选择第二种方式，减少非必要的 build 构建，直接发布更新即可。
+   如果你未改动涉及到源码文件的部分，则可以选择第二种方式，减少非必要的 `build` 构建，直接发布更新即可。
 
    ```sh
    # 先构建项目再发布包
@@ -78,7 +94,7 @@ nrm use taobao
 
 ### 开发调试
 
-开发阶段我们关注 examples 目录，作为我们的开发调试目录
+开发阶段我们关注 `examples` 目录，作为我们的开发调试目录
 
 示例：
 
@@ -88,4 +104,4 @@ nrm use taobao
 pnpm i @ah-ailpha/pro-sqltiptree@* --filter examples
 ```
 
-这里我们选择指定版本为 \*，方便我们进行开发调试，保证依赖为实时最新状态
+这里我们选择指定版本为 `*`，方便我们进行开发调试，保证依赖为实时最新状态
