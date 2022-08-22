@@ -7,5 +7,4 @@ const getPackages = async () => {
 }
 
 // test
-// test
 getPackages()
