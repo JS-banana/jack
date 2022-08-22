@@ -163,6 +163,17 @@ title: 设计方案
 
 4. 开发调试和编译打包
 
-   - 基于公司项目背景考虑，目前构建工具主要还是走 Webpack 方案，求稳，兼容老旧的方案
-   - 开发调试为了寻求体验统一目前也与 Webpack 保持一致
+   - 基于公司项目背景考虑，目前组件的构建工具主要还是 `Webpack` 方案，求稳，兼容老旧的方案
+   - 工具类的构建打包使用 `TypeScript` + `Rollup`的方案
+   - 为了模拟真实环境，提供 `examples`目录进行开发调试
    - 在打包构建层面做到绝对的依赖拆分，组件分离，支持按需加载
+
+5. 版本管理和包发布
+
+   - 使用 **changeset**进行多包版本管理
+   - 交互式 CLI 确定包版本 => 生成相应 `CHANGELOG.md`日志，并更新 `package.json` `version`信息
+   - 发布包至`npm`
+
+6. 工程化规范
+
+   - 使用 husky/pre-commit + lint-staged + eslint + prettier + markdownlint 约束代码规范
