@@ -71,7 +71,7 @@ git clone git@github.com:JS-banana/jack.git
 
 4. 确定包版本
 
-   - 本项目包版本 `version` 和 `CHANGELOG` 日志由 **changeset** 控制，你只需要执行以下脚本即可，在开始之前你应该已经了解了[semver 规范](https://semver.org/lang/zh-CN/spec/v2.0.0.html)
+   - 本项目包版本 `version` 和 `CHANGELOG` 日志由 **changeset** 控制，你只需要执行以下脚本即可，在开始之前你应该已经了解了[semver 规范](../learn/semver.md)
    - 执行以下命令后会出现交互式 CLI，请选择自己的子项目，并根据自己的子项目确定版本更新
 
    ```sh
