@@ -1,10 +1,15 @@
 {
   "name": "root",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "一个使用 pnpm + workspace + changeset 的 monorepo 多包管理组件化项目",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JS-banana/jack.git"
+  },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
