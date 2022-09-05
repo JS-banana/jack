@@ -9,9 +9,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    ":webpack:dev": "webpack-dev-server --open --inline --hot --compress --history-api-fallback --port 8081 --config ./webpack.dev.config.js"
+    "webpack:dev": "webpack-dev-server --open --inline --hot --compress --history-api-fallback --port 8081 --config ./webpack.dev.config.js"
   },
-  "main": "index.js",
   "dependencies": {
     "@ah-ailpha/components": "workspace:*",
     "@ah-ailpha/pro-sqltiptree": "workspace:*",
