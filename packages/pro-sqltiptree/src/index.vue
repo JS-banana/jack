@@ -9,7 +9,7 @@
 </template>
 <script>
 const prefixCls = 'ah-proSqlTipTree'
-
+// 测试版本发布 1.5.0
 export default {
   name: 'AhProSqlTipTree',
   props: {

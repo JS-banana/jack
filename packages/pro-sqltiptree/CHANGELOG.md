@@ -1,5 +1,23 @@
 # @ah-ailpha/pro-sqltiptree
 
+## 1.5.0
+
+### Minor Changes
+
+- docs: test version 1.5.0
+
+## 1.4.0
+
+### Minor Changes
+
+- docs: 测试版本 1.4.0
+
+## 1.3.0
+
+### Minor Changes
+
+- docs: 测试版本
+
 ## 1.2.0
 
 ### Minor Changes

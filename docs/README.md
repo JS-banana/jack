@@ -16,7 +16,7 @@ features:
     details: 使用changeset工具管理各包版本，把复杂的version管理变的极其简单
   - title: 完善的工程化
     details: 涵盖eslint、prettier、commitlint、markdownlint等，简化规范流程
-footer: MIT Licensed | Copyright © 2022-present 安恒信息-AILPHA部门
+footer: MIT Licensed | Copyright © 2022-present AILPHA部门
 ---
 
 ##

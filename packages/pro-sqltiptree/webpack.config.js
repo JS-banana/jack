@@ -19,7 +19,7 @@ module.exports = merge(webpackBaseConfig, {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
     filename: 'index.min.js',
-    library: 'pro-sqltiptree',
+    library: 'pro-sqltiptree', // pkg.name.slice(11) // @ah-ailpha/pro-sqltiptree
     libraryTarget: 'umd',
     umdNamedDefine: true,
   },
